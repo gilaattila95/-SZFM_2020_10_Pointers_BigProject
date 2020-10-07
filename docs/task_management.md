@@ -6,8 +6,8 @@
 egy leírás a trelloban hozzá. :D 
 
 ### Egy kártya mind felett
-	-  	Kapcsolatfelvétel az igénylő céggel /Ákos/ / címke időpont kis leírás /
-	-	Teem meeting az igénylésről /Laci/ / címke időpont kis leírás /
+	-   Kapcsolatfelvétel az igénylő céggel /Ákos/ / címke időpont kis leírás /
+	-   Team meeting az igénylésről /Laci/ / címke időpont kis leírás /
 	-   Megbeszélés az igénylő céggel /Dávid/ / címke időpont kis leírás /
 
 ### Követelmény specifikáció /Ákos egy kártya amiben benne van ki mit csinál/
