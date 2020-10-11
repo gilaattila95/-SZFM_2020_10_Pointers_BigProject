@@ -17,6 +17,10 @@ feltétlenül kellene eljönniük a számítógép mellől, azonban a munka egyh
 
 ## 3. Igényelt üzleti folyamatok
 
+-    3.1.	Online megjelenés 
+-    3.2.	Új cikkek felvitele az adatbázisba.
+-    3.3.	Két gomb megjelenítése a felső menüben: Érdekességek és Viccesek. 
+
 ## 4. A rendszerre vonatkozó szabályok
 
 - Cikkek tárolása MySQL-ben.
