@@ -59,4 +59,79 @@ Mind a regisztrált felhasználó és adminisztrátor általi cikk beküldés é
 
 ## 11. Funkció – követelmény megfeleltetés.
 
+<b>Követelményspecifikáció - K01: </b>
+
+A követelményspecifikációban követelményként megadott reszponzív design feltétele teljesülni fog, ugyanis a front-end
+Bootstrap keretrendszerrel kerül majd megvalósításra.
+
+<b>Követelményspecifikáció - K02: </b>
+
+A letisztult, egyszerű felület evidens, manapság a modern weblapoknál ez alapelvárás.
+Ezzel teljes mértékben tisztában is vagyunk, természetesen törekedni fogunk ezen követelmény
+kielégítésére. A képernyő terveken látható is az erre irányuló törekvés.
+
+<b>Követelményspecifikáció - K03: </b>
+
+Egy egyszerű és könnyen kezelhető, gyakorlatilag eltéveszthetetlen regisztrációs felület kerül majd létrehozásra a 
+munkatársak számára. Csak az alapadatok megadására (mint többek között a felhasználónévre) lesz szükség majd.
+
+<b>Követelményspecifikáció - K04: </b>
+
+A regisztrált munkatársak belépésére szolgáló, egyértelmű felület is el fog készülni.
+
+<b>Követelményspecifikáció - K05: </b>
+
+Fontosnak tartjuk, hogy a dolgozók által beküldött cikkek esetében a beküldő személye minden esetben látható legyen. 
+A regisztációkor megadott nickname kerül majd ilyenkor megjelenítésre.
+
+<b>Követelményspecifikáció - K06: </b>
+
+Fontosnak tartjuk a cikkek rangsorolását, hogy látható legyen, mik az aktuális népszerű cikkek. Ezért kategóriánként 
+a rangsorolást is véghez fogjuk vinni.
+
+<b>Követelményspecifikáció - K07: </b>
+
+Jelen dokumentum több pontos is részletezi az adminisztrátori belépőfelületet, képernyőterveken is megfigyelhető.
+A végleges weboldalon is helyet fog kapni. Szintén egyértelmű lesz, felépítésében hasonlítani fog a munkatársak számára 
+szolgáló belépőfelületre.
+
+<b>Követelményspecifikáció - K08: </b>
+
+A cikkek MySQL-ben történő tárolása lehetőséget ad majd azok könnyű manipulálására, kezelésére. Ebből következik, hogy az adatbázisba történő új cikkek hozzáadása a mai napig egyik legnépszerűbb adatbázis-kezelővel, a MySQL-lel könnyen kivitelezhető lesz majd.
+
+<b>Követelményspecifikáció - K09: </b>
+
+Alapkövetelménynek tartjuk, hogy a felkerült cikkek módosíthatók, igény szerint törölhetők legyenek az oldalról és az 
+adatbázisból egyaránt. Weboldalunk ezt a szempontot figyelembe véve készül majd.
+
+<b>Követelményspecifikáció - K10: </b>
+
+Az adminisztrátor számára elérhető funkciók rejtve maradnak majd az admin funkciókkal nem rendelkező felhasználók
+számára. Ugyanakkor a weboldalon lesz egy opció, miszerint egy adminisztrátornak minden egyes regisztrált felhasználó 
+esetében lehetősége lesz azt szintén adminisztrátorrá tenni.
+
+<b>Követelményspecifikáció - K11: </b>
+
+A megfelelő gombra kattintás után a cikkek téma szerinti listázása is megvalósításra kerül.
+
+<b>Követelményspecifikáció - K12: </b>
+
+A weblapunk a követelményspecifikációkban meghatározott technológiákkal megvalósítva a böngészőfüggetlenségi 
+követelménynek is maradéktalanul eleget tesz majd, ugyanúgy fog megjelenni az összes asztali böngészőben egyaránt.
+
+<b>Követelményspecifikáció - K13: </b>
+
+A modern alkalmazások és weboldalak kihagyhatatlan, nem mellesleg szemkímélő elemét, a Dark mode-ot a kezdetektől fogva
+elérhetővé tesszük a felhasználók számára.
+
 ## 12. Fogalomszótár.
+
+- [MySQL](https://en.wikipedia.org/wiki/MySQL)
+- [HTML](https://hu.wikipedia.org/wiki/HTML)
+- [CSS](https://hu.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [PHP]( https://en.wikipedia.org/wiki/PHP)
+- [Reszponzív design](https://en.wikipedia.org/wiki/Responsive_web_design)
+- [Front-end](https://en.wikipedia.org/wiki/Front-end_web_development)
+- [Boostrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
+- [Böngészőfüggetlenség](https://en.wikipedia.org/wiki/Cross-browser_compatibility)
+- [Dark mode]( https://en.wikipedia.org/wiki/Light-on-dark_color_scheme)
