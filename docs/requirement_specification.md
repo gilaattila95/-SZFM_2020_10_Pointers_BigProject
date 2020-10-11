@@ -17,9 +17,15 @@ feltétlenül kellene eljönniük a számítógép mellől, azonban a munka egyh
 
 ## 3. Igényelt üzleti folyamatok
 
--    3.1.	Online megjelenés 
--    3.2.	Új cikkek felvitele az adatbázisba.
--    3.3.	Hét gomb megjelenítése a felső menüben: Érdekességek, Viccesek, Cikk beküldése, Regisztráció, Belépés, Admin belépés illetve Rangsor 
+-    3.1.	Online megjelenés
+-    3.2.	Regisztráció
+-    3.3.	Bejelentkezés
+-    3.4.	Új cikkek felvitele az adatbázisba.
+-    3.5.	Hét gomb megjelenítése a felső menüben: Érdekességek, Viccesek, Cikk beküldése, Regisztráció, Belépés, Admin belépés illetve Rangsor 
+-    3.6. 	Alapértelmezett beállítás legyen az érdekes cikkek.
+-    3.7.	A cikkek tartalmazhatnak képeket is.
+-    3.8.	Tetszésnyílvánítás lehetősége.
+	
 
 ## 4. A rendszerre vonatkozó szabályok
 
