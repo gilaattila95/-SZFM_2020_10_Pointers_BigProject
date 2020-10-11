@@ -19,6 +19,11 @@ feltétlenül kellene eljönniük a számítógép mellől, azonban a munka egyh
 
 ## 4. A rendszerre vonatkozó szabályok
 
+- Cikkek tárolása MySQL-ben.
+- HTML/CSS alkalmazása.
+- A reszponzív design megvalósítása Bootsrtrap front-end keretrendszerrel történjen.
+- A képek formátumára vonatkozó követelmények: JPEG, JPG és PNG
+
 ## 5. Követelménylista
 - K01 Reszponzív design
 - K02 Letisztult, egyszerű felület
