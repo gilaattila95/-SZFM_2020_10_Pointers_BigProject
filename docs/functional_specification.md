@@ -137,7 +137,7 @@ az oldalon.
 
 - A "Belépés" gombra kattintva a felhasználó be tud jelentkezni az oldalra.
 
-- Az "Admin belépése" gomb megnyomását követően a megfelelő felhasználónév-jelszó párost követően már adminként vagyunk bejelentkezve. Ilyenkor a fenti menüsorban 4 új
+- Az "Admin belépése" gomb megnyomását követően a megfelelő felhasználónév-jelszó párost követően már adminként vagyunk bejelentkezve. Ilyenkor a fenti menüsorban 8 új
 menüpont jelenik meg. 
     - Az "Összes cikk" gombra kattintva az adminisztrátori főképernyőre juthatunk, itt kategória szerint listázhatjuk a cikkeket. 
     - A "Beküldött cikkek" a dolgozók által beküldött cikkjavaslatokat tartalmazzák.
@@ -146,6 +146,9 @@ menüpont jelenik meg.
     - Az "Adminisztrátor hozzáadás" gombra kattintva az adminisztrátor más felhasználókat adminná tehet.
     - A "Regisztrált felhasználók" gombra kattintva listázhatja a regisztrált felhasználókat.
 
+Értelemszerűen ebből a menüpontból van lehetőségünk 
+    - saját magunk által új cikket is hozzáadnunk az "Új cikk hozzáadása" gombbal, 
+    - míg az utolsó menüpont az "Admin kilépés" a felületről való kilépésre szolgál.
 
 ## 11. Funkció – követelmény megfeleltetés.
 
