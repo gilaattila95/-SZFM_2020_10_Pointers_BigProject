@@ -2,8 +2,8 @@
 
 ## Trello//IssueMgmt
 
-- Mindenki az adott részéhez csináljon egy trello kártyát és időzítse is be meg cimkézze fel az szépen elegánsan van
-egy leírás a trelloban hozzá. :D 
+- Mindenki az adott részéhez csináljon egy Trello kártyát és időzítse is be meg címkézze fel az szépen elegánsan van
+egy leírás a Trelloban hozzá. :D 
 
 ### Egy kártya mind felett
 	-   Kapcsolatfelvétel az igénylő céggel /Ákos/ / címke időpont kis leírás /
@@ -12,7 +12,7 @@ egy leírás a trelloban hozzá. :D
 
 ### Követelmény specifikáció /Ákos egy kártya amiben benne van ki mit csinál/
 	- Jelenlegi helyzet / Ákos
-	- Vágyálom redóndszer / Attila
+	- Vágyálom rendszer / Attila
 	- Igényelt üzleti folyamatok / Laci
 	- A rendszerre vonatkozó szabályok / Laci
 	- Követelmény lista / Dávid
@@ -41,7 +41,7 @@ egy leírás a trelloban hozzá. :D
 	- Funkcionális terv /Attila/
 	- Fizikai környezet /Dávid/
 	- Absztrakt domain modell /Ákos/
-	- Archhitekturális terv /Laci/
+	- Architekturális terv /Laci/
 	- Adatbázis terv /Attila/
 	- Implementációs terv /Dávid/
 	- Tesztterv /Ákos/
