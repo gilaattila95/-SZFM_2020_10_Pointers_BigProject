@@ -49,7 +49,8 @@ Az elsődleges szereplők, azaz a vállalat munkatársai gép előtt ülő munk�
 Ha a weboldalt látogató munkatárs úgy dönt, hogy szeretne cikkeket beküldeni, akkor regisztrálhat a weboldalra, ezáltal lehetősége lesz cikkek beküldésére, és a saját cikkük szerkesztésére és/vagy törlésére.<br>
 Van még egy fontos szereplő is: a weboldalt üzemeltető adminisztrátorok. Akik szintén írhatnak cikkeket, továbbá bármilyen cikket szerkeszthetnek és törölhetnek, akár olyat is, amit nem ő maguk írtak. Fontos még, hogy az adminisztrátor képes legyen egy regisztrált felhasználót adminisztrátorrá tenni pár gombnyomással.<br>
 Mind a regisztrált felhasználó és adminisztrátor általi cikk beküldés és törlés után azonnali visszajelzést kapjon az adminisztrátor, ha valami miatt nem sikerült az adatok eltárolása (pl.: kitöltetlen mező, nem megfelelő képformátum) vagy ellenkezőleg, azaz sikeres volt a folyamat végrehajtása.<br>
-
+<p align="center">Use Cases</p>
+<img src="https://github.com/gilaattila95/SZFM_2020_10_Pointers_BigProject/blob/main/docs/images/use_cases.png">
 
 ## 8. Megfeleltetés, hogyan fedik le a használati esetek a követelményeket.
 
