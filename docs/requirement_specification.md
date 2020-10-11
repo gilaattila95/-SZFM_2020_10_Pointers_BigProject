@@ -25,7 +25,8 @@ feltétlenül kellene eljönniük a számítógép mellől, azonban a munka egyh
 -    3.6. 	Alapértelmezett beállítás legyen az érdekes cikkek.
 -    3.7.	A cikkek tartalmazhatnak képeket is.
 -    3.8.	Tetszésnyílvánítás lehetősége.
-	
+-    3.9.	Sötét/Világos mód választás lehetősége
+-    3.10.	Adminisztrátori belépés
 
 ## 4. A rendszerre vonatkozó szabályok
 
