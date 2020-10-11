@@ -116,6 +116,8 @@ Mind a regisztrált felhasználó és adminisztrátor általi cikk beküldés é
 <img src="https://github.com/gilaattila95/SZFM_2020_10_Pointers_BigProject/blob/main/docs/images/Kepernyoterv%201.png" width="50%" height="50%">
 <img src="https://github.com/gilaattila95/SZFM_2020_10_Pointers_BigProject/blob/main/docs/images/Kepernyoterv%202.png" width="50%" height="50%">
 <img src="https://github.com/gilaattila95/SZFM_2020_10_Pointers_BigProject/blob/main/docs/images/Kepernyoterv%203.png" width="50%" height="50%">
+<img src="https://github.com/gilaattila95/SZFM_2020_10_Pointers_BigProject/blob/main/docs/images/Kepernyoterv%204.png" width="50%" height="50%">
+
 ## 10. Forgatókönyvek.
 
 Amikor a felhasználó felkeresi a weboldalt, a kezdőképernyőn találja magát. Ebben az esetben máris egy érdekes cikket lát,
