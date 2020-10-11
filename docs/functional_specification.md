@@ -140,7 +140,12 @@ az oldalon.
 - Az "Admin belépése" gomb megnyomását követően a megfelelő felhasználónév-jelszó párost követően már adminként vagyunk bejelentkezve. Ilyenkor a fenti menüsorban 4 új
 menüpont jelenik meg. 
     - Az "Összes cikk" gombra kattintva az adminisztrátori főképernyőre juthatunk, itt kategória szerint listázhatjuk a cikkeket. 
-    - a "Beküldött cikkek" a dolgozók által beküldött cikkjavaslatokat tartalmazzák.
+    - A "Beküldött cikkek" a dolgozók által beküldött cikkjavaslatokat tartalmazzák.
+    - A "Cikkek törlése" gombra kattintva az adminisztrátor törölhet oda nem illő cikkeket. 
+    - A "Cikkek szerkesztése" gombra kattintva az adminisztrátor szerkesztheti a már feltöltött cikkeket.
+    - Az "Adminisztrátor hozzáadás" gombra kattintva az adminisztrátor más felhasználókat adminná tehet.
+    - A "Regisztrált felhasználók" gombra kattintva listázhatja a regisztrált felhasználókat.
+
 
 ## 11. Funkció – követelmény megfeleltetés.
 
