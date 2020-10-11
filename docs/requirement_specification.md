@@ -14,3 +14,22 @@ feltétlenül kellene eljönniük a számítógép mellől, azonban a munka egyh
 
 ## 2. Vágyálom rendszer leírása:
 - Vállalkozásunk a monotónia csökkentése érdekében szeretne egy Fact portált létrehozni a munkavállalóink számára. Célunk, hogy az ülő munkát végző munkatársak óránként 5 percre érdekes és/vagy vicces tényeket olvasgathassanak, kiszakadva egy időre ebből a helyzetből.Szeretnénk, hogy a weboldal könnyen elérhető és letisztult legyen. A weboldal több funkciós legyen. A fő profil az két gomb: az egyik az érdekes tényeket, a másik pedig a vicceseket jeleníti meg. Lényeges, hogy tudjanak beküldeni a dolgozók is új cikkeket, legyen felhasználó fiókjuk, legyen like és dislike funkció, és ebből egy rangsort is láthassanak. Esetleg későbbiekben, hozzá adhatunk új kategóriákat is. Fontos, hogy reszponzív felülettel rendelkezzen, így okostelefonon és táblagépen is zökkenőmentesen meg lehessen nézni. A vállalati gépeken különböző böngészők vannak, ezért lényeges, hogy böngészőfüggetlen legyen. A weboldal ugyanúgy jelenjen meg Mozilla, Chrome, Edge stb. böngészőkben is.
+
+## 3. Igényelt üzleti folyamatok
+
+## 4. A rendszerre vonatkozó szabályok
+
+## 5. Követelménylista
+- K01 Reszponzív design
+- K02 Letisztult, egyszerű felület
+- K03 Regisztrációs felület a munkatársak számára
+- K04 Belépőfelület a munkatársak számára
+- K05 Cikkeknél legyen ott a beküldő neve
+- K06 Cikkek rangsorolása like és kategória szerint
+- K07 Belépőfelület az adminisztrátor számára
+- K08 Adatbázisba könnyen hozzáadhatók legyenek a cikkek
+- K09 A cikkek szerkeszthetők és törölhetőek legyenek
+- K10 Egy admin adminná tehet egy regisztrált felhasználót
+- k11 Cikkek listázása kategória szerint
+- K12 Böngészőfüggetlenség
+- K13 Dark mode opció
