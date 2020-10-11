@@ -19,7 +19,7 @@ feltétlenül kellene eljönniük a számítógép mellől, azonban a munka egyh
 
 -    3.1.	Online megjelenés 
 -    3.2.	Új cikkek felvitele az adatbázisba.
--    3.3.	Két gomb megjelenítése a felső menüben: Érdekességek és Viccesek. 
+-    3.3.	Hét gomb megjelenítése a felső menüben: Érdekességek, Viccesek, Cikk beküldése, Regisztráció, Belépés, Admin belépés illetve Rangsor 
 
 ## 4. A rendszerre vonatkozó szabályok
 
