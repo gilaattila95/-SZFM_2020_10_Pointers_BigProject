@@ -54,6 +54,63 @@ Mind a regisztrált felhasználó és adminisztrátor általi cikk beküldés é
 
 ## 8. Megfeleltetés, hogyan fedik le a használati esetek a követelményeket.
 
+<b>Eset 1: Főképernyő látogatása</b>
+
+- A weboldal címének beírása után megjelenő főoldal megjelenítése.
+- Alapértelmezettként az Érdekes tényekkel kapcsolatos cikkek vannak beállítva, így először ez lesz látható.
+- A főoldalon látható elemek: Érdekes- és vicces tényeket megjelenítő gombok, regisztrációs gomb, belépő gomb, admin belépő gomb.
+
+<b>Eset 2: Érdekes gomb</b>
+
+- A felhasználó erre kattintva az érdekes tények csoportjába tartozó cikkek listáját jelenítheti meg.
+- Alapértelmezettként az Érdekes tényekkel kapcsolatos cikkek vannak beállítva, így először ez lesz látható.
+
+<b>Eset 3: Vicces gomb</b>
+
+- A felhasználó erre kattintva a vicces tények csoportjába tartozó cikkek listáját jelenítheti meg.
+
+<b>Eset 4: Regisztráció</b>
+
+- A felhasználó erre kattintva a rendszer átirányítja a regisztrációs felületre.
+- Sikeres regisztráció után a felhasználói felületre kerül.
+
+<b>Eset 5: Belépés</b>
+
+- Regisztrált felhasználói űrlap megjelenítése.
+- Beküldés után az űrlap adatainak ellenőrzése.
+- Láthatóvá válik a regisztrált felhasználó számára a következők: új cikk hozzáadása, beküldött cikkek szerkesztése és törlése.
+- Csak saját cikkeket lehet törölni és vagy szerkeszteni.
+
+<b>Eset 6: Rangsor</b>
+
+- Ezen az oldalon az egyes cikkek rangsorolva jelennek meg a like-ok száma alapján.
+
+<b>Eset 6: Adminisztrátor bejelentkező</b>
+
+- Admin bejelentkezési űrlap megjelenítése.
+- Beküldés után az űrlap adatainak ellenőrzése.
+- Az adatok helyes megadása után, átirányítás a cikkfeltöltő oldalra.
+
+<b>Eset 7: Cikkek feltöltése</b>
+
+- Cikkfeltöltő űrlap megjelenítése.
+- Űrlap adatainak tárolása.
+- Az űrlap adatainak ellenőrzése (hiányzó elemek, helyes képformátumok használata).
+
+<b>Eset 8: Cikkek törlése</b>
+
+- Egy választott cikk törlése.
+
+<b>Eset 9: Cikkek szerkesztése</b>
+
+- Egy választott cikk szerkesztése.
+- Beküldés előtt a mezők ellenőrzése, hogy megfelelően vannak-e kitöltve.
+
+<b>Eset 10: Adminisztrátor hozzáadása</b>
+
+- Az adminisztrátor egy regisztrált felhasználót adminisztrátorrá tehet.
+
+
 ## 9. Képernyő tervek.
 
 ## 10. Forgatókönyvek.
