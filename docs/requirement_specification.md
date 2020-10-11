@@ -33,3 +33,14 @@ feltétlenül kellene eljönniük a számítógép mellől, azonban a munka egyh
 - k11 Cikkek listázása kategória szerint
 - K12 Böngészőfüggetlenség
 - K13 Dark mode opció
+
+## 6. Fogalomszótár
+- [MySQL](https://en.wikipedia.org/wiki/MySQL)
+- [HTML](https://hu.wikipedia.org/wiki/HTML)
+- [CSS](https://hu.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [PHP]( https://en.wikipedia.org/wiki/PHP)
+- [Reszponzív design](https://en.wikipedia.org/wiki/Responsive_web_design)
+- [Front-end](https://en.wikipedia.org/wiki/Front-end_web_development)
+- [Boostrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
+- [Böngészőfüggetlenség](https://en.wikipedia.org/wiki/Cross-browser_compatibility)
+- [Dark mode]( https://en.wikipedia.org/wiki/Light-on-dark_color_scheme)
