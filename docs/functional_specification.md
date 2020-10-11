@@ -115,6 +115,25 @@ Mind a regisztrált felhasználó és adminisztrátor általi cikk beküldés é
 
 ## 10. Forgatókönyvek.
 
+Amikor a felhasználó felkeresi a weboldalt, a kezdőképernyőn találja magát. Ebben az esetben máris egy érdekes cikket lát,
+hiszen ez az alapértelmezés. A fenti menüsor segítségével navigálhat a további menüpontok között.
+
+- Minden cikk alatt helyet kapott egy like és egy dislike gomb is, hogy a felhasználók ilyen formában ki tudják nyilvánítani
+az adott cikkel kapcsolatos (nem)tetszésüket.
+
+- Szintén helyet kapott minden cikk alatt a szerző feltüntetése is.
+
+- Az "Érdekes" gombra kattintva az Érdekes cikkek gyűjteményét látja majd a felhasználó.
+
+- A "Viccesek" gombra kattintva a vicces cikkek gyűjteményét látja majd a felhasználó.
+
+- A "Cikk beküldése" gombra kattintva ha a felhasználó ha saját cikket szeretne beküldeni, alapvetően kétféle kimenet lehet:
+    -  az admin szemrevételezi a beküldendő cikket
+és úgy dönt, hogy megfelel a kritériumoknak és kikerül az oldalra 
+    - vagy ellenkező esetben meg is tagadhatja annak megjelenítését
+az oldalon.
+
+
 ## 11. Funkció – követelmény megfeleltetés.
 
 <b>Követelményspecifikáció - K01: </b>
