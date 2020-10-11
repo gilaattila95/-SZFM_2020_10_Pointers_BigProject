@@ -28,7 +28,7 @@ feltétlenül kellene eljönniük a számítógép mellől, azonban a munka egyh
 - K06 Cikkek rangsorolása like és kategória szerint
 - K07 Belépőfelület az adminisztrátor számára
 - K08 Adatbázisba könnyen hozzáadhatók legyenek a cikkek
-- K09 A cikkek szerkeszthetők és törölhetőek legyenek
+- K09 A cikkek szerkeszthetők és törölhetők legyenek
 - K10 Egy admin adminná tehet egy regisztrált felhasználót
 - k11 Cikkek listázása kategória szerint
 - K12 Böngészőfüggetlenség

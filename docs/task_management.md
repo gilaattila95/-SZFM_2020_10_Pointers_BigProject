@@ -22,7 +22,6 @@ egy leírás a Trelloban hozzá. :D
 	- A rendszer céljai és nem céljai. / Attila 
 	- Jelenlegi helyzet leírása. / Hivatkozunk a Követelmény specifikációra
 	- Vágyálom rendszer leírása. / Hivatkozunk a Követelmény specifikációra
-	- A rendszerre vonatkozó pályázat, törvények, rendeletek, szabványok és ajánlások felsorolása. / Attila
 	- Jelenlegi üzleti folyamatok modellje. / Hivatkozunk a Követelmény specifikációra
 	- Igényelt üzleti folyamatok modellje. / Hivatkozunk a Követelmény specifikációra
 	- Követelmény lista. / Hivatkozunk a Követelmény specifikációra
