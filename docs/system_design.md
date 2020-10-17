@@ -196,6 +196,19 @@ CREATE TABLE `likes_number` (
 
 # Tesztterv
 
+Adat- és funkcionalitás tesztelésének elvégzésére lesz szükség:
+- Adminisztrátor bejelentkezésére vonatkozó tesztelés: több különböző adatot beírni (helyes és helytelen). Helyes adat esetén az adminisztrátor sikeresen bejelentkezik a felületre. Helytelen adat megadása esetén hibaüzenetet kellene kapnunk.
+- Az adminisztrátor kijelentkezés megfelelően működik-e? Ha igen, az adminisztrátor kijelentkezik az adminisztrációs felületből és a boolean értéke 0 lesz.
+- A felhasználói regisztráció megfelelően működik-e: szükséges adat kihagyása esetén hibaüzenet arra vonatkozóan, mit kell pótolni. Egyéb esetben sikeres regisztráció.
+- A felhasználói bejelentkezés jól működik-e: megfelelő bejelentkezési adatok megadását követően sikeres bejelentkezést kellene tapasztalunk, ellenkező esetben hibaüzenetet.
+- Az adminisztrátori cikk feltöltési mező tesztelése: üres mező beküldése esetén hibaüzenetet kellene kapnunk. Ha minden mezőt kitöltöttünk, a beküldésnek sikeresnek kellene lennie.
+- Cikk feltöltésekor azt is ellenőrízni, hogy a képformátumot figyelembe veszi-e a program. Rossz képformátum (minden, ami nem jpg, jpeg vagy png) feltöltése esetén visszajelzést kellene kapnunk, hogy a cikk feltöltése nem sikerült.
+- A munkatársak általi cikk beküldési mező tesztelése: minden mezőnek kitöltve kell lennie a sikeres cikk beküldéshez. Ellenkező esetben hibaüzenetet kell kapnunk.
+- Like vagy dislike gomb tesztelése. Az egyikre klikkelve annak értéke eggyel kellene nőnie.
+- A rangsor működésének, tartalmának ellenörzése.
+- A Vissza és Következő gombok ellenörzése: utóbbi esetén új cikk megjelenését adott témán belül, míg előbbinél az előzőleg megtekintett cikket kellene látnunk.
+- Annak ellenőrzése, hogy a weboldal reszponzívan működik-e.
+
 # Telepítési terv
 
 # Karbantartási terv
