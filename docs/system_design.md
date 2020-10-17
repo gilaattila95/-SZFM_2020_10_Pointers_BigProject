@@ -119,6 +119,36 @@ a cikkek like-olását illetve dislike-olását lehetővé tevő funkcionalitás
 Az admin bejelentkezés után további menüpontok mindegyike szinten elérhető.
 
 # Fizikai környezet
+### Frontend
+- Visual Studio Code
+- Sublime Text
+- Brackets
+
+### Backend
+
+- Visual Studio Code
+- phpMyAdmin
+
+### Egyéb
+
+- XAMPP
+
+Böngészők:
+
+- Firefox
+- Google Chrome
+- Opera
+- MS Edge 
+
+### Fejlesztő eszközök
+- HTML
+- CSS
+- PHP
+- JavaScript
+
+### Keretrendszer
+- Bootstrap
+
 
 # Absztrakt domain modell
 
