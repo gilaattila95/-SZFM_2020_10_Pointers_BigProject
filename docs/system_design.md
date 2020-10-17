@@ -119,7 +119,49 @@ a cikkek like-olását illetve dislike-olását lehetővé tevő funkcionalitás
 Az admin bejelentkezés után további menüpontok mindegyike szinten elérhető.
 
 # Fizikai környezet
+
 # Absztrakt domain modell
+
+## Absztrakt komponensek, ezek kapcsolatai
+
+Weblapunk rendszere alapvetően 3 jól elkülöníthető komponensből áll. Ezek a tartalom megjelenítését és a felhasználóval való
+interaktivitást lehetővé tevő frontend, a felhasználó cselekvéseit értelmező és feldolgozó backend, illetve az adatok 
+tárolására szolgáló adatbázis.
+
+## Szemléletes ábra a komponensek kapcsolatáról:
+
+<img src="https://github.com/gilaattila95/SZFM_2020_10_Pointers_BigProject/blob/main/docs/images/abstract_components.png">
+
+## Példa esetek:
+
+#### Abban az esetben, ha <b>a felhasználó saját cikket</b> szeretne beküldeni:
+
+A felhasználó ellátogat a Cikk beküldése menüpontra, mindez a frontenden történik. A cikk beküldésével járó információkat 
+a backend értelmezi. A backend az adatok feldolgozása után továbbítja azokat az adatbázisnak tárolás céljából.
+A MySQL adatbázisunk pedig tárolja a küldött tényt.
+
+#### Abban az esetben, ha az <b>admin bejelentkezne</b> a rendszerbe:
+
+Az adminisztrátor a főoldalról az Admin belépés menüpontra való kattintás után eljut
+a bejelentkezési oldalra ahol felhasználónév és jelszó páros szükséges a belépéshez.
+
+A bejelentkezési adatok a backend számára kerülnek továbbításra, ahol a bejelentkezési információk összehasonlításra 
+kerülnek az adatbázisban külön az admin felhasználók adatainak tárolására létrehozott tábla megfelelő attribútumaival.
+Amennyiben egyezés van, az admin bejelentkezés sikeres. Ellenkező esetben meghiúsul.
+
+#### Abban az esetben, ha egy <b>felhasználó bejelentkezne</b> a rendszerbe:
+
+A főoldalról a Belépés menüpontra való kattintás után a felhasználó a bejelntkezési oldalra jut (Frontend), ahol a 
+regisztrációkor megadott felhasználónév és jelszó páros szükséges a belépéshez.
+
+A bejelentkezési adatok a backend számára kerülnek továbbításra, ahol a bejelentkezési információk összehasonlításra 
+kerülnek az adatbázisban tárolt adatokkal. Egyezés esetén a bejelentkezés sikeres lesz és a felhasználó bejelentkezése
+sikeres, ellenkező esetben a folyamat meghíúsul.
+
+#### Abban az esetben, ha egy <b>felhasználó (nem)tetszését szeretné kifejezni </b> egy poszttal kapcsolatosan:
+
+A frontend szinten megjelenő like és dislike gombokra való kattintást a backend kezeli le. Ezen gombnyomások száma - amely
+természetesen folyamatosan frissül - az adatbázisban kerül tárolásra.
 
 # Architekturális terv
 
@@ -172,6 +214,19 @@ CREATE TABLE `likes_number` (
 # Implementációs terv
 
 # Tesztterv
+
+Adat- és funkcionalitás tesztelésének elvégzésére lesz szükség:
+- Adminisztrátor bejelentkezésére vonatkozó tesztelés: több különböző adatot beírni (helyes és helytelen). Helyes adat esetén az adminisztrátor sikeresen bejelentkezik a felületre. Helytelen adat megadása esetén hibaüzenetet kellene kapnunk.
+- Az adminisztrátor kijelentkezés megfelelően működik-e? Ha igen, az adminisztrátor kijelentkezik az adminisztrációs felületből és a boolean értéke 0 lesz.
+- A felhasználói regisztráció megfelelően működik-e: szükséges adat kihagyása esetén hibaüzenet arra vonatkozóan, mit kell pótolni. Egyéb esetben sikeres regisztráció.
+- A felhasználói bejelentkezés jól működik-e: megfelelő bejelentkezési adatok megadását követően sikeres bejelentkezést kellene tapasztalunk, ellenkező esetben hibaüzenetet.
+- Az adminisztrátori cikk feltöltési mező tesztelése: üres mező beküldése esetén hibaüzenetet kellene kapnunk. Ha minden mezőt kitöltöttünk, a beküldésnek sikeresnek kellene lennie.
+- Cikk feltöltésekor azt is ellenőrízni, hogy a képformátumot figyelembe veszi-e a program. Rossz képformátum (minden, ami nem jpg, jpeg vagy png) feltöltése esetén visszajelzést kellene kapnunk, hogy a cikk feltöltése nem sikerült.
+- A munkatársak általi cikk beküldési mező tesztelése: minden mezőnek kitöltve kell lennie a sikeres cikk beküldéshez. Ellenkező esetben hibaüzenetet kell kapnunk.
+- Like vagy dislike gomb tesztelése. Az egyikre klikkelve annak értéke eggyel kellene nőnie.
+- A rangsor működésének, tartalmának ellenörzése.
+- A Vissza és Következő gombok ellenörzése: utóbbi esetén új cikk megjelenését adott témán belül, míg előbbinél az előzőleg megtekintett cikket kellene látnunk.
+- Annak ellenőrzése, hogy a weboldal reszponzívan működik-e.
 
 # Telepítési terv
 
