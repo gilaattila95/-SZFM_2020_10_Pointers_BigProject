@@ -30,6 +30,40 @@
 
 # Üzleti folyamatok modellje
 
+A felhasználó a weblapot megnyitva egy egyszerű, könnyen átlátható főképernyőn találja magát, 
+ahol alapértelmezetten az érdekes tényeket tartalmazó cikkek jönnek majd vele szembe.
+Innen a fenti menüsorból navigálhat tovább a felhasználó. A menüsor tartalma:
+
+- 'Érdekességek' gomb: A gombra kattintva eljuthatunk az érdekes cikkek listájához. A főképernyőről ezen menüpontra kattintva nem érzékelünk 
+újdonságot, hiszen alapértelmezés szerint is ezeket a cikkeket látjuk.
+
+- 'Viccesek' gomb: A gombra kattintva a felhasználó eljut a vicces cikkek listájához.
+
+- 'Cikk beküldése' gomb: A felhasználónak lehetőséged ad saját cikkek beküldésére.
+Az oldalon való megjelenést viszont adminisztrátori jóváhagyás előz meg.
+
+- 'Regisztráció' gomb: A  felhasználót a regisztrációs felületre irányítja ahol lehetősége van fiók létrehozására.
+
+- 'Belépés' gomb: Rákattintva a felhasználói bejelentkezési képernyőre jutunk ahol a felhasználók az előzőleg, 
+regisztráció során megadott adatainak (felhasználónév és jelszó) megfelelő kombinációjával léphet be.
+
+- 'Admin belépés' gomb: Az adminisztrátori bejelentkező űrlapra viszi a felhasználót. Hibás bejelentkezési adatok esetén
+    meghiúsul a belépés.
+    - Cikk beküldése: Egy szövegmező áll rendelkezésre, ahová a cikk szövege írható. Lehetőség van kiválasztani egy legördülő
+     listából, hogy melyik kategóriába szeretnénk feltölteni cikkünket, amelyet igény szerint akár képpel együtt is
+     feltölthetünk.
+
+- 'Rangsor' gomb: Kattintás után megjelennek a cikkek az erre szolgáló felületen, a felhasználók által leglájkoltabb 
+cikkek kerülnek a rangsor elejére. 
+
+- 'Dark mode' gomb: A gombra kattintva az oldal színvilága megváltozik, a szemnek hosszútávon kellemesebb 'sötét módban' 
+kerül megjelenítésre az oldal. Újabb kattintást követően visszakapjuk eredeti színvilágunkat.
+
+- Like és dislike gomb: Lenyomásuk száma tárolásra kerül, egyfajta visszajelzésként szolgál a cikk népszerűségéről.
+
+- 'Vissza' és 'következő' gombok: Adott kategórián belüli cikkek közötti navigálást teszi lehetővé. Kategórián belüli új, 
+véletlenszerű cikk megjelenítését és az előzőleg látott cikk újramegtekintését teszik lehetővé.
+
 # Követelmények
 
 # Funkcionális terv
