@@ -27,6 +27,25 @@
 - Helytelen, rasszista, pornográf cikkek feltöltése
 
 # Projekt terv  
+### Csapatunk tagjai:
+-	Gila Attila (fejlesztő)
+-	Halász Dávid (fejlesztő)
+-	Kincs Ákos (fejlesztő)
+-	Tóth László (fejlesztő)
+
+Négy fős, fiatal, motivált csapatunk minden tagja egyetért abban, hogy egy ilyen projekt készítése során az egyik, ha nem a legfontosabb teendő a feladatok egymás közötti igazságos felosztása. Csapatunk néhány tagja már rendelkezik nem elhanyagolható webfejlesztői múlttal, így segítséget tudnak majd nyújtani csapatunk azon tagjai számára, akik még nem érzik teljesen magukénak ezt a területet. A projekt készítése során mindemellett természetesen figyeltünk arra is, hogy nagyjából ugyanolyan munkamennyiségben is nagyjából egységes legyen a feladatok egymás közötti felosztása.<br>
+
+### Ütemterv:
+
+- <b>2020.10.07. - 08.</b>: Az első kapcsolatfelvétel az igénylő céggel, amely során nagyvonalakban vázolták az elképzeléseiket a weboldallal kapcsolatban, majd ezt követő napon a projekt részletesebb megbeszélése.
+- <b>2020.10.08.</b>: Team meeting: A projekttel kapcsolatos feladatok megbeszélése a csapattal.
+- <b>2020.10.12.</b>: 
+  
+  - A követelmény specifikáció elkészítése, ahol rögzítettük a projekttel kapcsolatos igényeket.
+  - A funkcionális specifikáció kidolgozásának befejezése, amiben számos szempont alapján tisztáztuk a projekt során felmerülő esetlegesen nem egyértelmű pontokat.
+- <b>2020.10.19.</b>: A jelen dokumentum (Rendszerterv) elkészítése.
+- <b>2020.10.20. - jelenleg</b>: Ettől a naptól kezdve kezdődik a kódolás és végül a tesztelés. 
+
 
 # Üzleti folyamatok modellje
 
