@@ -100,7 +100,49 @@ a cikkek like-olását illetve dislike-olását lehetővé tevő funkcionalitás
 Az admin bejelentkezés után további menüpontok mindegyike szinten elérhető.
 
 # Fizikai környezet
+
 # Absztrakt domain modell
+
+## Absztrakt komponensek, ezek kapcsolatai
+
+Weblapunk rendszere alapvetően 3 jól elkülöníthető komponensből áll. Ezek a tartalom megjelenítését és a felhasználóval való
+interaktivitást lehetővé tevő frontend, a felhasználó cselekvéseit értelmező és feldolgozó backend, illetve az adatok 
+tárolására szolgáló adatbázis.
+
+## Szemléletes ábra a komponensek kapcsolatáról:
+
+<img src="https://github.com/gilaattila95/SZFM_2020_10_Pointers_BigProject/blob/main/docs/images/abstract_components.png">
+
+## Példa esetek:
+
+#### Abban az esetben, ha <b>a felhasználó saját cikket</b> szeretne beküldeni:
+
+A felhasználó ellátogat a Cikk beküldése menüpontra, mindez a frontenden történik. A cikk beküldésével járó információkat 
+a backend értelmezi. A backend az adatok feldolgozása után továbbítja azokat az adatbázisnak tárolás céljából.
+A MySQL adatbázisunk pedig tárolja a küldött tényt.
+
+#### Abban az esetben, ha az <b>admin bejelentkezne</b> a rendszerbe:
+
+Az adminisztrátor a főoldalról az Admin belépés menüpontra való kattintás után eljut
+a bejelentkezési oldalra ahol felhasználónév és jelszó páros szükséges a belépéshez.
+
+A bejelentkezési adatok a backend számára kerülnek továbbításra, ahol a bejelentkezési információk összehasonlításra 
+kerülnek az adatbázisban külön az admin felhasználók adatainak tárolására létrehozott tábla megfelelő attribútumaival.
+Amennyiben egyezés van, az admin bejelentkezés sikeres. Ellenkező esetben meghiúsul.
+
+#### Abban az esetben, ha egy <b>felhasználó bejelentkezne</b> a rendszerbe:
+
+A főoldalról a Belépés menüpontra való kattintás után a felhasználó a bejelntkezési oldalra jut (Frontend), ahol a 
+regisztrációkor megadott felhasználónév és jelszó páros szükséges a belépéshez.
+
+A bejelentkezési adatok a backend számára kerülnek továbbításra, ahol a bejelentkezési információk összehasonlításra 
+kerülnek az adatbázisban tárolt adatokkal. Egyezés esetén a bejelentkezés sikeres lesz és a felhasználó bejelentkezése
+sikeres, ellenkező esetben a folyamat meghíúsul.
+
+#### Abban az esetben, ha egy <b>felhasználó (nem)tetszését szeretné kifejezni </b> egy poszttal kapcsolatosan:
+
+A frontend szinten megjelenő like és dislike gombokra való kattintást a backend kezeli le. Ezen gombnyomások száma - amely
+természetesen folyamatosan frissül - az adatbázisban kerül tárolásra.
 
 # Architekturális terv
 
