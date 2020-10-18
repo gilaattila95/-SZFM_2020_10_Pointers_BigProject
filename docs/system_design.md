@@ -203,6 +203,28 @@ természetesen folyamatosan frissül - az adatbázisban kerül tárolásra.
 
 # Architekturális terv
 
+### Architekturális tervezési minta
+
+Esetünkben ez nem más, mint a 3 Layered architecture vagyis magyarul a 3-rétegű alkalmazás, amely alapesetben így néz
+ki:
+
+<img src="https://github.com/gilaattila95/SZFM_2020_10_Pointers/blob/master/images/3layered_architecture.png" width="50%" height="50%">
+
+A projektünk során ez alapján a tervezési minta alapján dolgozunk.
+
+- A Prezentációs rétegben foglal helyet minden, amit a felhasználó lát és használ. Mi ebben a rétegben HTML-t, CSS-t és
+JavaScript-et alkalmaztunk.
+- A Logikai rétegnek a felhasználó parancsainak feldolgozásában van szerepe. Ennek a rétegnek a funkcionalitására PHP-t
+használunk projektünk során, amely a felső rétegből jövő kérést szolgál ki válaszként valamely alsó rétegbeli adattal.
+- Az Adat rétegben az adatok kerülnek tárolásra. Az általunk használt technológia a MySQL volt.
+
+### Rendszer bővíthetősége
+Weblapunk igény szerint mind tartalomban, mind pedig funkcionalitásában bővíthető.
+
+### Biztonsági funkciók
+Mivel a felhasználók csak regisztráció nélkül, vendégként böngészhetik a weboldalt, így nem tárolunk róluk semmilyen
+adatot.
+
 # Adatbázis terv
 
 - Logikai adatmodell
