@@ -292,6 +292,12 @@ Adat- és funkcionalitás tesztelésének elvégzésére lesz szükség:
 
 # Telepítési terv
 
+A felhasználó esetében a következőképp néz majd ki:
+- Asztali számítógép vagy laptop megléte, használatra kész állapotban
+- Internetelérés
+- A rendszeren alapértelmezett böngésző használata vagy harmadik féltől származó böngésző letöltése és telepítése
+- Az oldal URL-jének címsorba történő begépelése
+
 # Karbantartási terv
 
 Mivel mind jól tudjuk, hogy az informatika egy folyamatosan megújuló iparág, fontosnak tartjuk, hogy naprakészek maradjunk az aktuális szabványokkal, technológiákkal kapcsolatban. Ebből adódóan kötelességünknek érezzük, hogy weblapunkat átadás után is
