@@ -243,6 +243,8 @@ CREATE TABLE `likes_number` (
 
 # Implementációs terv
 
+<img src="https://github.com/gilaattila95/SZFM_2020_10_Pointers_BigProject/blob/main/docs/images/big_uml.png" width="100%" height="auto">
+
 # Tesztterv
 
 Adat- és funkcionalitás tesztelésének elvégzésére lesz szükség:
