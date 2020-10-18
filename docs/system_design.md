@@ -85,6 +85,14 @@ véletlenszerű cikk megjelenítését és az előzőleg látott cikk újramegte
 
 # Követelmények
 
+- K01: Reszponzív design
+- K02: Az adatbázisba könnyen hozzáadhatók legyenek a cikkek.
+- K03: Böngészőfüggetlenség
+
+## Nemfunkcionális követelmények:
+
+- K04: Letisztult, egyszerű, átlátható felület
+
 # Funkcionális terv
 
 Weboldalunkat tervezése során törekedtünk arra, hogy a cég minden dolgozója egyből magáénak érezze azzal, hogy használata
