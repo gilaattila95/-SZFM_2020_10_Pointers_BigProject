@@ -198,7 +198,7 @@ természetesen folyamatosan frissül - az adatbázisban kerül tárolásra.
 # Adatbázis terv
 
 - Logikai adatmodell
-<img src="https://github.com/gilaattila95/SZFM_2020_10_Pointers_BigProject/blob/master/images/fact_db.png" width="50%" height="50%">
+<img src="https://github.com/gilaattila95/SZFM_2020_10_Pointers_BigProject/blob/main/docs/images/fact_db.PNG" width="50%" height="50%">
 
 - Tárolt eljárások
 
