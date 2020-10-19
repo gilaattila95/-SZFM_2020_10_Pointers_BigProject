@@ -85,13 +85,21 @@ véletlenszerű cikk megjelenítését és az előzőleg látott cikk újramegte
 
 # Követelmények
 
-- K01: Reszponzív design
+- K01: Reszponzív design.
 - K02: Az adatbázisba könnyen hozzáadhatók legyenek a cikkek.
-- K03: Böngészőfüggetlenség
+- K03: Böngészőfüggetlenség.
+- K04: Egyszerű és könnyen kezelhető regisztráció.
+- K05: Egyértelmű belépés.
+- K06: Szerző megjelenítése a cikkeknél. 
+- K07: Rangsor kategóriánként.
+- K08: Admin belépés.
+- K09: Cikkek szerkesztése.
+- K10: Admin kezelőfelület elrejtése a sima felhasználók elől.
+- K11: Cikkek téma szerinti listázása.
 
 ## Nemfunkcionális követelmények:
 
-- K04: Letisztult, egyszerű, átlátható felület
+- K12: Letisztult, egyszerű, átlátható felület
 
 # Funkcionális terv
 

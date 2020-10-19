@@ -189,7 +189,7 @@ a rangsorolást is véghez fogjuk vinni.
 
 <b>Követelményspecifikáció - K07: </b>
 
-Jelen dokumentum több pontos is részletezi az adminisztrátori belépőfelületet, képernyőterveken is megfigyelhető.
+Jelen dokumentum több ponton is részletezi az adminisztrátori belépőfelületet, képernyőterveken is megfigyelhető.
 A végleges weboldalon is helyet fog kapni. Szintén egyértelmű lesz, felépítésében hasonlítani fog a munkatársak számára 
 szolgáló belépőfelületre.
 
