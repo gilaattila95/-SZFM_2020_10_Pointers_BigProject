@@ -216,7 +216,7 @@ természetesen folyamatosan frissül - az adatbázisban kerül tárolásra.
 Esetünkben ez nem más, mint a 3 Layered architecture vagyis magyarul a 3-rétegű alkalmazás, amely alapesetben így néz
 ki:
 
-<img src="https://github.com/gilaattila95/SZFM_2020_10_Pointers_BigProject/tree/main/docs/images/3layered_architecture.png" width="50%" height="50%">
+<img src="https://github.com/gilaattila95/SZFM_2020_10_Pointers_BigProject/blob/main/docs/images/3layered_architecture.png" width="50%" height="50%">
 
 A projektünk során ez alapján a tervezési minta alapján dolgozunk.
 
