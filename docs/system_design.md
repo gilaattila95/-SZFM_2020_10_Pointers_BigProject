@@ -230,8 +230,7 @@ használunk projektünk során, amely a felső rétegből jövő kérést szolg�
 Weblapunk igény szerint mind tartalomban, mind pedig funkcionalitásában bővíthető.
 
 ### Biztonsági funkciók
-Mivel a felhasználók csak regisztráció nélkül, vendégként böngészhetik a weboldalt, így nem tárolunk róluk semmilyen
-adatot.
+A fehasználók adatait, amelyeket regisztráció során megadott, azokat biztonságosan tároljuk.
 
 # Adatbázis terv
 
