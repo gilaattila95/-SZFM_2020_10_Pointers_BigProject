@@ -59,20 +59,78 @@ egy leírás a Trelloban hozzá. :D
 
 ## Fejlesztés
 
-- A fejlesztést két fő részre osztjuk a csapatban: Backend és Frontend (MySQL)
-	- 
+- A fejlesztést két fő részre osztjuk a csapatban: Frontend(Ákos és Laci) és Backend(Attila és Dávid) és ezen kívül két részre osztjuk a csapatot még admin(Ákos és Dávid) és user(Attila és Laci) részre osztjuk. 
+	- A HTML és CSS részt Ákos és Laci készíti
+	- A PHP és SQL részt Attila és Dávid készíti
+- Tehát a munkafelosztás egyenletes a kódolás részben is
 
 ### Sprint 1
 
+#### Frontend
+
+##### Admin (Ákos)
+- HTML elkészítése:
+	- 
+
+##### User (Laci)
+- HTML elkészítése:
+	- 
+
+#### Backend
+
+##### Admin (Dávid)
+- SQL elkészítése:
+	- 
+
+##### User (Attila)
+- SQL elkészítése:
+	- 
+
 ### Sprint 2
 
-### Sprint 3 
+#### Frontend
+
+##### Admin (Ákos)
+- 
+
+##### User (Laci)
+- 
+
+#### Backend
+
+##### Admin (Dávid)
+- 
+
+##### User (Attila)
+- 
+
+### Sprint 3 + Demó (projekt bemutató, értékeléssel)
+
+#### Frontend
+
+##### Admin (Ákos)
+- 
+
+##### User (Laci)
+- 
+
+#### Backend
+
+##### Admin (Dávid)
+- 
+
+##### User (Attila)
+- 
 
 ### Sprint 4 
 
 ### Sprint 5
 
 ## Teszt
+
+## Tesztelés 1 (párhuzamosan a Sprint 4-el)
+
+## Tesztelés 2 (párhuzamosan a Sprint 5-el)
 
 Firefox
 Opera
