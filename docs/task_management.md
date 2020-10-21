@@ -6,46 +6,46 @@
 egy leírás a Trelloban hozzá. :D 
 
 ### Egy kártya mind felett
-	-   Kapcsolatfelvétel az igénylő céggel /Ákos/ / címke időpont kis leírás /
-	-   Team meeting az igénylésről /Laci/ / címke időpont kis leírás /
-	-   Megbeszélés az igénylő céggel /Dávid/ / címke időpont kis leírás /
+- Kapcsolatfelvétel az igénylő céggel /Ákos/ / címke időpont kis leírás /
+- Team meeting az igénylésről /Laci/ / címke időpont kis leírás /
+- Megbeszélés az igénylő céggel /Dávid/ / címke időpont kis leírás /
 
 ### Követelmény specifikáció /Ákos egy kártya amiben benne van ki mit csinál/
-	- Jelenlegi helyzet / Ákos
-	- Vágyálom rendszer / Attila
-	- Igényelt üzleti folyamatok / Laci
-	- A rendszerre vonatkozó szabályok / Laci
-	- Követelmény lista / Dávid
-	- Fogalomszótár / Dávid
+- Jelenlegi helyzet / Ákos
+- Vágyálom rendszer / Attila
+- Igényelt üzleti folyamatok / Laci
+- A rendszerre vonatkozó szabályok / Laci
+- Követelmény lista / Dávid
+- Fogalomszótár / Dávid
 
 ### Funkcionális Specifikáció /Attila egy kártya amiben benne van ki mit csinál/
-	- A rendszer céljai és nem céljai. / Attila 
-	- Jelenlegi helyzet leírása. / Hivatkozunk a Követelmény specifikációra
-	- Vágyálom rendszer leírása. / Hivatkozunk a Követelmény specifikációra
-	- Jelenlegi üzleti folyamatok modellje. / Hivatkozunk a Követelmény specifikációra
-	- Igényelt üzleti folyamatok modellje. / Hivatkozunk a Követelmény specifikációra
-	- Követelmény lista. / Hivatkozunk a Követelmény specifikációra
-	- Használati esetek. / Dávid
-	- Megfeleltetés, hogyan fedik le a használati esetek a követelményeket. / Dávid
-	- Képernyő tervek. / Laci
-	- Forgatókönyvek. / Laci
-	- Funkció – követelmény megfeleltetés. / Ákos
-	- Fogalomszótár. / Ákos
+- A rendszer céljai és nem céljai. / Attila 
+- Jelenlegi helyzet leírása. / Hivatkozunk a Követelmény specifikációra
+- Vágyálom rendszer leírása. / Hivatkozunk a Követelmény specifikációra
+- Jelenlegi üzleti folyamatok modellje. / Hivatkozunk a Követelmény specifikációra
+- Igényelt üzleti folyamatok modellje. / Hivatkozunk a Követelmény specifikációra
+- Követelmény lista. / Hivatkozunk a Követelmény specifikációra
+- Használati esetek. / Dávid
+- Megfeleltetés, hogyan fedik le a használati esetek a követelményeket. / Dávid
+- Képernyő tervek. / Laci
+- Forgatókönyvek. / Laci
+- Funkció – követelmény megfeleltetés. / Ákos
+- Fogalomszótár. / Ákos
 
 ### Rendszerterv /Dávid egy kártya amiben benne van ki mit csinál/
-	- A rendszer céljai /Attila/
-	- Projektterv /Dávid/
-	- Üzleti folyamatok modellje /Ákos/
-	- Követelmények /Laci/
-	- Funkcionális terv /Attila/
-	- Fizikai környezet /Dávid/
-	- Absztrakt domain modell /Ákos/
-	- Architekturális terv /Laci/
-	- Adatbázis terv /Attila/
-	- Implementációs terv /Dávid/
-	- Tesztterv /Ákos/
-	- Telepítési terv /Laci/
-	- Karbantartási terv /Attila/
+- A rendszer céljai /Attila/
+- Projektterv /Dávid/
+- Üzleti folyamatok modellje /Ákos/
+- Követelmények /Laci/
+- Funkcionális terv /Attila/
+- Fizikai környezet /Dávid/
+- Absztrakt domain modell /Ákos/
+- Architekturális terv /Laci/
+- Adatbázis terv /Attila/
+- Implementációs terv /Dávid/
+- Tesztterv /Ákos/
+- Telepítési terv /Laci/
+- Karbantartási terv /Attila/
 
 ## Git commit
 
@@ -59,7 +59,18 @@ egy leírás a Trelloban hozzá. :D
 
 ## Fejlesztés
 
-Coming soon
+- A fejlesztést két fő részre osztjuk a csapatban: Backend és Frontend (MySQL)
+	- 
+
+### Sprint 1
+
+### Sprint 2
+
+### Sprint 3 
+
+### Sprint 4 
+
+### Sprint 5
 
 ## Teszt
 
