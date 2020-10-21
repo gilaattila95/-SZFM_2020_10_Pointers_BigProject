@@ -83,8 +83,8 @@ egy leírás a Trelloban hozzá. :D
 	- 
 
 ##### User (Attila)
-- SQL elkészítése:
-	- 
+	- SQL elkészítése:
+		- 
 
 ### Sprint 2
 
