@@ -69,18 +69,18 @@ egy leírás a Trelloban hozzá. :D
 #### Frontend
 
 ##### Admin (Ákos)
-- HTML elkészítése:
-	- 
+	- HTML elkészítése:
+		- 
 
 ##### User (Laci)
-- HTML elkészítése:
-	- 
+	- HTML elkészítése:
+		- 
 
 #### Backend
 
 ##### Admin (Dávid)
-- SQL elkészítése:
-	- 
+	- SQL elkészítése:
+		- 
 
 ##### User (Attila)
 	- SQL elkészítése:
