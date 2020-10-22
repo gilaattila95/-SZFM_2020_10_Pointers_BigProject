@@ -128,9 +128,9 @@ egy leírás a Trelloban hozzá. :D
 
 ## Teszt
 
-## Tesztelés 1 (párhuzamosan a Sprint 4-el)
+### Tesztelés 1 (párhuzamosan a Sprint 4-el)
 
-## Tesztelés 2 (párhuzamosan a Sprint 5-el)
+### Tesztelés 2 (párhuzamosan a Sprint 5-el)
 
 Firefox
 Opera
