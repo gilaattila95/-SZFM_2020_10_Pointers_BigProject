@@ -84,43 +84,46 @@ egy leírás a Trelloban hozzá. :D
 
 ##### User (Attila)
 	- SQL elkészítése:
-		- 
+		- Userek adatainak tárolása
+		- Userek által feltöltött cikkek kezelése
 
 ### Sprint 2
 
 #### Frontend
 
 ##### Admin (Ákos)
-- 
+	- 
 
 ##### User (Laci)
-- 
+	- 
 
 #### Backend
 
 ##### Admin (Dávid)
-- 
+	- 
 
 ##### User (Attila)
-- 
+	- PHP elkészítése:
+		- Tartalom kezelése és adatbázis kapcsolása
 
 ### Sprint 3 + Demó (projekt bemutató, értékeléssel)
 
 #### Frontend
 
 ##### Admin (Ákos)
-- 
+	- 
 
 ##### User (Laci)
-- 
+	- 
 
 #### Backend
 
 ##### Admin (Dávid)
-- 
+	- 
 
 ##### User (Attila)
-- 
+	- PHP elkészítése:
+		- User oldalakhoz a php kód megírása
 
 ### Sprint 4 
 
