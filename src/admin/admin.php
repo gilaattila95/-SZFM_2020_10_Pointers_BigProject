@@ -1,3 +1,6 @@
+<?php
+  require_once("action.php");
+?>
 <!doctype html>
 <html>
 <head>
