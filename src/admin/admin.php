@@ -32,12 +32,12 @@
 			  </button>
 		  </a>
 		  <a href="../register.php">
-			<button type="button" class="button2">
+			<button type="button" class="button0">
 			 Regisztráció
 			</button>
 		</a>
 		<a href="../user.php">
-			<button type="button" class="button2">
+			<button type="button" class="button1">
 			 Belépés
 			</button>
 		</a>
@@ -47,7 +47,7 @@
 			  </button>
 		  </a>
 		  <a href="../rangsor.php">
-			<button type="button" class="button2">
+			<button type="button" class="button1">
 			 Rangsor
 			</button>
 		</a>
