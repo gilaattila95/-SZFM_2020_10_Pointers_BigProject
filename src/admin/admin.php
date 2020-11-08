@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
 <title>SZFM_Fact_Portal</title>
-<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -16,37 +16,37 @@
 
     <div class="container" align="center">
 		<div class="vertical-center">	
-		  <a href="./index.php">
+		  <a href="../index.php">
 			 <button type="button" class="button1">
 			   Érdekességek 		
 			 </button>
 		  </a>
-		  <a href="./vicces.php">
+		  <a href="../vicces.php">
 			  <button type="button" class="button2">
 			   Viccesek
 			  </button>
 		  </a>
-		  <a href="./cikk.php">
+		  <a href="../cikk.php">
 			  <button type="button" class="button1">
 			   Cikk beküldése
 			  </button>
 		  </a>
-		  <a href="./register.php">
+		  <a href="../register.php">
 			<button type="button" class="button2">
 			 Regisztráció
 			</button>
 		</a>
-		<a href="./user.php">
+		<a href="../user.php">
 			<button type="button" class="button2">
 			 Belépés
 			</button>
 		</a>
-		  <a href="./admin.php">
+		  <a href="admin.php">
 			  <button type="button" class="button2">
 			   Admin belépés
 			  </button>
 		  </a>
-		  <a href="./rangsor.php">
+		  <a href="../rangsor.php">
 			<button type="button" class="button2">
 			 Rangsor
 			</button>
