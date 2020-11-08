@@ -1,3 +1,6 @@
+<?php
+  require_once("action.php");
+?>
 <!doctype html>
 <html>
 <head>
@@ -55,7 +58,7 @@
 			<?php } 
 			} else {
 				$msg = "Nincs adminisztrátori jogosultságod!"; 
-				phpAlert($msg);
+				
 			}
 			?>
 		</div>
