@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
 <title>SZFM_Fact_Portal</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -15,9 +15,9 @@
 	</h2>
     <div class="container" align="center">
 		<div class="vertical-center">	
-		  <a href="lista_osszes.php"> <!--innen egy legördülő menüből választhatjuk ki, melyik kategóriára szeretnénk szűrni-->
+		  <a href="administrator.php"> <!--innen egy legördülő menüből választhatjuk ki, melyik kategóriára szeretnénk szűrni-->
 			 <button type="button" class="button1">
-			   Összes cikk 		
+			   Összes cikk
 			 </button>
 		  </a>
 
@@ -27,7 +27,7 @@
 			  </button>
 		  </a>
 
-		  <a href="admin_cikkfeltoltes.php">
+		  <a href="admin_send_article.php">
 			<button type="button" class="button1">
 			  Cikkfeltöltés		
 			</button>
