@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
 <title>SZFM_Fact_Portal</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -12,7 +12,7 @@
 	</h2>
     <div class="container" align="center">
 		<div class="vertical-center">	
-		  <a href="lista_osszes.php"> <!--innen egy legördülő menüből választhatjuk ki, melyik kategóriára szeretnénk szűrni-->
+		  <a href="administrator.php"> <!--innen egy legördülő menüből választhatjuk ki, melyik kategóriára szeretnénk szűrni-->
 			 <button type="button" class="button1">
 			   Összes cikk 		
 			 </button>
@@ -24,7 +24,7 @@
 			  </button>
 		  </a>
 
-		  <a href="admin_cikkfeltoltes.php">
+		  <a href="admin_send_article.php">
 			<button type="button" class="button1">
 			  Cikkfeltöltés		
 			</button>
@@ -36,7 +36,7 @@
 			</button>
 		 </a>
 
-		<a href="index.php?event=kilepes" name="event" id="event" value="kilepes">
+		<a href="admin.php?event=kilepes" name="event" id="event" value="kilepes">
             <button type="button" class="button2">Admin kilépés</button>
 		</a>
 
@@ -57,7 +57,6 @@
 			<?php } 
 			} else {
 				$msg = "Nincs adminisztrátori jogosultságod!"; 
-				phpAlert($msg);
 			}
 			?>
 		</div>
