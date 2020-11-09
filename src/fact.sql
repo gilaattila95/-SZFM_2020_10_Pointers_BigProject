@@ -56,6 +56,7 @@ CREATE TABLE `cikkek` (
   `ctext` text COLLATE utf8_hungarian_ci NOT NULL,
   `kep` varchar(60) COLLATE utf8_hungarian_ci DEFAULT NULL,
   `asent` int(11) NOT NULL,
+  `usent` int(11) NOT NULL,
   `aktiv` int(11) NOT NULL,
   `kategoria` varchar(60) COLLATE utf8_hungarian_ci NOT NULL,
   PRIMARY KEY (cid)
