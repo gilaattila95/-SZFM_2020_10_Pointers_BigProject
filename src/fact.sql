@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `admin_userek` (
-  `auid` int(11) NOT NULL,
+  `auid` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(50) COLLATE utf8_hungarian_ci NOT NULL,
   `jelszo` char(255) COLLATE utf8_hungarian_ci NOT NULL,
   `uname` varchar(60) COLLATE utf8_hungarian_ci NOT NULL,
@@ -52,7 +52,7 @@ INSERT INTO `admin_userek` (`auid`, `email`, `jelszo`, `uname`, `aktiv`) VALUES
 --
 
 CREATE TABLE `cikkek` (
-  `cid` int(11) NOT NULL,
+  `cid` int(11) NOT NULL AUTO_INCREMENT,
   `ctext` text COLLATE utf8_hungarian_ci NOT NULL,
   `kep` varchar(60) COLLATE utf8_hungarian_ci DEFAULT NULL,
   `asent` int(11) NOT NULL,
@@ -134,7 +134,7 @@ INSERT INTO `cikkek` (`cid`, `ctext`, `kep`, `asent`, `aktiv`, `kategoria`) VALU
 --
 
 CREATE TABLE `cég_userek` (
-  `cuid` int(11) NOT NULL,
+  `cuid` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(50) COLLATE utf8_hungarian_ci NOT NULL,
   `jelszo` char(255) COLLATE utf8_hungarian_ci NOT NULL,
   `uname` varchar(60) COLLATE utf8_hungarian_ci NOT NULL,
@@ -149,7 +149,7 @@ CREATE TABLE `cég_userek` (
 --
 
 CREATE TABLE `likes_number` (
-  `lnid` int(11) NOT NULL,
+  `lnid` int(11) NOT NULL AUTO_INCREMENT,
   `cid` int(11) NOT NULL,
   `likes` int(11) DEFAULT '1',
   `dislikes` int(11) DEFAULT '1',
