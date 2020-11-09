@@ -34,7 +34,8 @@ CREATE TABLE `admin_userek` (
   `email` varchar(50) COLLATE utf8_hungarian_ci NOT NULL,
   `jelszo` char(255) COLLATE utf8_hungarian_ci NOT NULL,
   `uname` varchar(60) COLLATE utf8_hungarian_ci NOT NULL,
-  `aktiv` int(11) NOT NULL DEFAULT '1'
+  `aktiv` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (auid)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 --
@@ -56,7 +57,8 @@ CREATE TABLE `cikkek` (
   `kep` varchar(60) COLLATE utf8_hungarian_ci DEFAULT NULL,
   `asent` int(11) NOT NULL,
   `aktiv` int(11) NOT NULL,
-  `kategoria` varchar(60) COLLATE utf8_hungarian_ci NOT NULL
+  `kategoria` varchar(60) COLLATE utf8_hungarian_ci NOT NULL,
+  PRIMARY KEY (cid)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 --
@@ -136,7 +138,8 @@ CREATE TABLE `cég_userek` (
   `email` varchar(50) COLLATE utf8_hungarian_ci NOT NULL,
   `jelszo` char(255) COLLATE utf8_hungarian_ci NOT NULL,
   `uname` varchar(60) COLLATE utf8_hungarian_ci NOT NULL,
-  `aktiv` int(11) NOT NULL DEFAULT '1'
+  `aktiv` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (cuid)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 -- --------------------------------------------------------
@@ -149,7 +152,10 @@ CREATE TABLE `likes_number` (
   `lnid` int(11) NOT NULL,
   `cid` int(11) NOT NULL,
   `likes` int(11) DEFAULT '1',
-  `dislikes` int(11) DEFAULT '1'
+  `dislikes` int(11) DEFAULT '1',
+  PRIMARY KEY (lnid),
+  CONSTRAINT FK_cid FOREIGN KEY (cid)
+  REFERENCES cikkek(cid)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 COMMIT;
 
