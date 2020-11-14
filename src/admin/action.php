@@ -108,5 +108,26 @@ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "admin_send_article") {
     } 
 }
 
+//ADMIN FELÜLETEN A MUNKATÁRSAK ÁLTAL BEKÜLDÖTT CIKKEK MEGJELENÍTÉSE
+if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "users_articles") {
+    if (isset($_SESSION["auid"])) {
+     $sql ="select * from cikkek where usent=1";
+     $cikkek = mysqli_query($dbc, $sql);
+     
+     if(isset($_POST['submit'])){
+        if(isset($_POST['articles'])) {
+            $selected = $_POST['articles'];
+                 
+                if($selected == "all") {
+                    $sql ="select * from cikkek where usent=1";
+                    $cikkek = mysqli_query($dbc, $sql);
+                } else {
+                    $sql ="select * from cikkek where usent=1 and aktiv=$selected";
+                    $cikkek = mysqli_query($dbc, $sql);
+                }
+            }
+        }
+    } 
+ }
 
 ?>
