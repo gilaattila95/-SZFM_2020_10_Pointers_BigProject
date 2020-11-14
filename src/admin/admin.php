@@ -62,7 +62,7 @@
 		<button class="admin-button" type="submit">Belépés</button>
 	</form>
 	<h1 class="version">
-		v.0.1
+		v.0.2
 	</h1>
     </div>
 </body>

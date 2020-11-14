@@ -18,7 +18,7 @@
 			 </button>
 		  </a>
 
-		  <a href="sent_cikk.php">
+		  <a href="administrator.php">
 			  <button type="button" class="button2">
 			   Beküldött cikkek
 			  </button>
