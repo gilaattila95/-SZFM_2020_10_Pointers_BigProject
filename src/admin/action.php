@@ -54,10 +54,25 @@ if ($pEvent == "bejelentkezés") {
 //ADMIN FELÜLETEN AZ ÖSSZES CIKK LISTÁZÁSA
 if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "administrator") {
     if (isset($_SESSION["auid"])) {
-        $sql ="select * from cikkek where aktiv=1";
+        $sql ="select * from cikkek where kategoria=vicces";
         $cikkek = mysqli_query($dbc, $sql);
+
+        if(isset($_POST['submit'])){
+            if(isset($_POST['articles'])) {
+                $selected = $_POST['articles'];
+                     
+                    if($selected == "all") {
+                        $sql ="select * from cikkek";
+                        $cikkek = mysqli_query($dbc, $sql);
+                    } else {
+                        $sql ="select * from cikkek where kategoria='$selected'";
+                        $cikkek = mysqli_query($dbc, $sql);
+                    }
+            }
+        }
     } 
 }
+
 
 //HA HOSSZÚ A SZÖVEG, LEGYEN RÖVID ÉS '...'
 function truncate($str, $chars, $end = '...') {

@@ -52,8 +52,8 @@
 					<select name="articles" class = "form-control" id="articles">
 						<option value="" disabled selected>Choose option</option>
 						<option value="all">Összes cikkek</option>
-						<option value="1">Érdekes cikkek</option>
-						<option value="0">Vicces cikkek</option>
+						<option value="érdekes">Érdekes cikkek</option>
+						<option value="vicces">Vicces cikkek</option>
 					</select>
 					<input type="submit" name="submit" value="Choose options">
 				</form>
@@ -69,8 +69,7 @@
 					</div> 
 			<?php } 
 			} else {
-				$msg = "Nincs adminisztrátori jogosultságod!"; 
-				
+				$msg = "Nincs adminisztrátori jogosultságod!"; 	
 			}
 			?>
 		</div>
