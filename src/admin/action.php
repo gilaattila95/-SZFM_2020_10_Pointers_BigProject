@@ -130,4 +130,15 @@ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "users_articles") {
     } 
  }
 
+ //ADMIN FELÜLETEN EGY CIKK MEGNÉZÉSE
+ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "article") {
+    if (isset($_SESSION["auid"])) {
+        $cid = $_GET['cid'];
+        $sql ="select * from cikkek where cid='$cid'";
+        $cikk = mysqli_query($dbc, $sql);
+    }
+}
+
+// FELHASZNÁLÓK ÁLTAL BEKÜLDÖTT CIKKEK AKTIVÁLÁSA VAGY TÖRLÉSE
+
 ?>
