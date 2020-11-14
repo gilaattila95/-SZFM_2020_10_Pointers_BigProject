@@ -134,7 +134,7 @@ INSERT INTO `cikkek` (`cid`, `ctext`, `kep`, `asent`, `aktiv`, `kategoria`) VALU
 -- Tábla szerkezet ehhez a táblához `cég_userek`
 --
 
-CREATE TABLE `cég_userek` (
+CREATE TABLE `ceg_userek` (
   `cuid` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(50) COLLATE utf8_hungarian_ci NOT NULL,
   `jelszo` char(255) COLLATE utf8_hungarian_ci NOT NULL,
