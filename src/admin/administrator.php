@@ -47,6 +47,18 @@
 	</div>
 	<div class="container adminCikkLista" align="center" style="margin-top: 10px;;">
 		<div class="vertical-center">
+		<div>
+				<form action="" method="post">
+					<select name="articles" class = "form-control" id="articles">
+						<option value="" disabled selected>Choose option</option>
+						<option value="all">Összes cikkek</option>
+						<option value="1">Érdekes cikkek</option>
+						<option value="0">Vicces cikkek</option>
+					</select>
+					<input type="submit" name="submit" value="Choose options">
+				</form>
+			</div>
+
 			<?php 
 			if ($result = $dbc->query($sql)) {
 				while ($row = $result->fetch_assoc()) { ?>
