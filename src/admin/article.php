@@ -37,7 +37,7 @@
 				Új cikk hozzáadása
 				</button>
 			</a>
-			<a href="index.php?event=kilepes" name="event" id="event" value="kilepes">
+			<a href="../index.php?event=kilepes" name="event" id="event" value="kilepes">
             <button type="button" class="button2">Admin kilépés</button>
 		</a>  
 		</div>
