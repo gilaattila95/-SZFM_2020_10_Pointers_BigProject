@@ -26,22 +26,30 @@
 	</h2>
     <div class="container" align="center">
 		<div class="vertical-center">	
-		  <a href="administrator.php">
+		<a href="administrator.php">
 			 <button type="button" class="button1">
-			   Összes cikk 		
+			   Összes cikk
 			 </button>
 		  </a>
+
 		  <a href="users_articles.php">
 			  <button type="button" class="button2">
 			   Beküldött cikkek
 			  </button>
 		  </a>
+
 		  <a href="admin_send_article.php">
-			  <button type="button" class="button1">
-			   Új cikk hozzáadása
-			  </button>
-		  </a>
-		<a href="../index.php?event=kilepes" name="event" id="event" value="kilepes">
+			<button type="button" class="button1">
+			  Cikkfeltöltés		
+			</button>
+		 </a>
+
+		 <a href="add_admin.php">
+			<button type="button" class="button1">
+			  Admin hozzáadása	
+			</button>
+		 </a>
+		<a href="index.php?event=kilepes" name="event" id="event" value="kilepes">
             <button type="button" class="button2">Admin kilépés</button>
 		</a>  
 	</div>

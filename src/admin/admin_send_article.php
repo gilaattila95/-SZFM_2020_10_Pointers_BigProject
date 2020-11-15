@@ -16,24 +16,17 @@
     <div class="container" align="center">
 		<div class="container" align="center">
 			<div class="vertical-center">	
-			  <a href="administrator"> <!--innen egy legördülő menüből választhatjuk ki, melyik kategóriára szeretnénk szűrni-->
+			  <a href="administrator.php"> <!--innen egy legördülő menüből választhatjuk ki, melyik kategóriára szeretnénk szűrni-->
 				 <button type="button" class="button1">
 				   Összes cikk 		
 				 </button>
 			  </a>
 
-			  <a href="administrator.php">
+			  <a href="users_articles.php">
 				  <button type="button" class="button2">
 				   Beküldött cikkek
 				  </button>
 			  </a>
-
-			  <a href="users_articles.php">
-					<button type="button" class="button1">
-					Felhasználók cikkei		
-					</button>
-				</a>
-
 	
 			  <a href="admin_send_article.php">
 				<button type="button" class="button1">
