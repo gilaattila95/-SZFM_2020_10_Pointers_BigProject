@@ -40,7 +40,7 @@
 			   Belépés
 			  </button>
 		  </a>
-          <a href="admin.php">
+          <a href="admin/admin.php">
 			  <button type="button" class="button2">
 			   Admin 
 			  </button>
