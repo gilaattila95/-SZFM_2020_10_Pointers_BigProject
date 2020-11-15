@@ -1,3 +1,6 @@
+<?php
+  require_once("action.php");
+?>
 
 
 <!doctype html>
@@ -48,7 +51,13 @@
 			   Rangsor
 			  </button>
 		  </a>
-      
+		  <h1 class="article">
+	    	<?php if ($result = $dbc->query($sql)) {
+          $vicces = $result->fetch_assoc(); 
+          $elozo = $result->fetch_assoc(); 
+          print $vicces['ctext'];
+          }?>
+        <h1>  
         <img src="images/<?php print $vicces["kep"] ?>" class="fact_pic" width="30%" height="30%"></p>
         <div class="thumbs">
         	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>

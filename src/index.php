@@ -1,5 +1,5 @@
 <?php
-  require_once("admin/action.php");
+  require_once("action.php");
 ?>
 
 <!doctype html>
