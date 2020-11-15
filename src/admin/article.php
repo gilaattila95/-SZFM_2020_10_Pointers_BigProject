@@ -26,6 +26,12 @@
 				Beküldött cikkek
 				</button>
 			</a>
+			<a href="users_articles.php">
+				<button type="button" class="button1">
+				Felhasználók cikkei		
+				</button>
+			</a>
+
 			<a href="admin_send_article.php">
 				<button type="button" class="button1">
 				Új cikk hozzáadása

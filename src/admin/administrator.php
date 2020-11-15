@@ -29,6 +29,12 @@
 
 		  <a href="admin_send_article.php">
 			<button type="button" class="button1">
+			  Felhasználók cikkei		
+			</button>
+		 </a>
+
+		  <a href="admin_send_article.php">
+			<button type="button" class="button1">
 			  Cikkfeltöltés		
 			</button>
 		 </a>
@@ -50,12 +56,11 @@
 		<div>
 				<form action="" method="post">
 					<select name="articles" class = "form-control" id="articles">
-						<option value="" disabled selected>Choose option</option>
-						<option value="all">Összes cikkek</option>
+						<option value="all" selected>Összes cikkek</option>
 						<option value="érdekes">Érdekes cikkek</option>
 						<option value="vicces">Vicces cikkek</option>
 					</select>
-					<input type="submit" name="submit" value="Choose options">
+					<input type="submit" name="submit" value="Listázás">
 				</form>
 			</div>
 

@@ -32,7 +32,7 @@
 			  </button>
 		  </a>
 		  <a href="../register.php">
-			<button type="button" class="button0">
+			<button type="button" class="button2">
 			 Regisztráció
 			</button>
 		</a>
