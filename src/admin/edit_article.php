@@ -38,7 +38,7 @@
 		 
 	   </a>
 
-		<a href="../index.php?event=kilepes" name="event" id="event" value="kilepes">
+	   <a href="index.php?event=kilepes" name="event" id="event" value="kilepes">
             <button type="button" class="button2">Admin kilépés</button>
 		</a>
 		  
@@ -67,7 +67,7 @@
 		    <button class="cikk-button" type="submit" >Frissít!</button>
 		</form>
         <h1 class="version">
-            v.0.1
+            v.0.2
         </h1>
     </div>
 </body>

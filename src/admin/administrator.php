@@ -47,9 +47,9 @@
 
 	   </a>
 
-		<a href="../index.php?event=kilepes" name="event" id="event" value="kilepes">
+	   <a href="index.php?event=kilepes" name="event" id="event" value="kilepes">
             <button type="button" class="button2">Admin kilépés</button>
-		</a>  
+		</a>
 	</div>
 	<div class="container adminCikkLista" align="center" style="margin-top: 10px;;">
 		<div class="vertical-center">
@@ -80,7 +80,7 @@
 		</div>
 	</div>
 	<h1 class="version">
-		v.0.1
+		v.0.2
 	</h1>
     </div>
 </body>
