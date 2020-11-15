@@ -54,7 +54,7 @@ if ($pEvent == "bejelentkezés") {
 //ADMIN FELÜLETEN AZ ÖSSZES CIKK LISTÁZÁSA
 if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "administrator") {
     if (isset($_SESSION["auid"])) {
-        $sql ="select * from cikkek where kategoria=vicces";
+        $sql ="select * from cikkek";
         $cikkek = mysqli_query($dbc, $sql);
 
         if(isset($_POST['submit'])){
