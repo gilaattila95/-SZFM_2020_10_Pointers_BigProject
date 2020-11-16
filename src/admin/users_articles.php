@@ -26,17 +26,17 @@
 	</h2>
     <div class="container" align="center">
 		<div class="vertical-center">	
-		<a href="administrator.php">
+		<a href="administrator.php"> <!--innen egy legördülő menüből választhatjuk ki, melyik kategóriára szeretnénk szűrni-->
 			 <button type="button" class="button1">
 			   Összes cikk
 			 </button>
 		  </a>
 
 		  <a href="users_articles.php">
-			  <button type="button" class="button2">
-			   Beküldött cikkek
-			  </button>
-		  </a>
+			<button type="button" class="button2">
+			  Felhasználók cikkei		
+			</button>
+		 </a>
 
 		  <a href="admin_send_article.php">
 			<button type="button" class="button1">
@@ -45,12 +45,12 @@
 		 </a>
 
 		 <a href="add_admin.php">
-			<button type="button" class="button1">
+			<button type="button" class="button2">
 			  Admin hozzáadása	
 			</button>
 		 </a>
 		<a href="../index.php?event=kilepes" name="event" id="event" value="kilepes">
-            <button type="button" class="button2">Admin kilépés</button>
+            <button type="button" class="button1">Admin kilépés</button>
 		</a>  
 	</div>
 	<div class="container adminCikkLista" align="center" style="margin-top: 10px;">

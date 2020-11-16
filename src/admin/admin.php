@@ -36,7 +36,7 @@
 			 Regisztráció
 			</button>
 		</a>
-		<a href="../user.php">
+		<a href="../login.php">
 			<button type="button" class="button1">
 			 Belépés
 			</button>

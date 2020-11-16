@@ -24,7 +24,7 @@
 
 			  <a href="users_articles.php">
 				  <button type="button" class="button2">
-				   Beküldött cikkek
+				   Felhasználók cikkei
 				  </button>
 			  </a>
 	
@@ -35,14 +35,14 @@
 			 </a>
 	
 			 <a href="add_admin.php">
-				<button type="button" class="button1">
+				<button type="button" class="button2">
 				  Admin hozzáadása	
 				</button>
 			 </a>
 			
 		   </a>
 		   <a href="../index.php?event=kilepes" name="event" id="event" value="kilepes">
-            <button type="button" class="button2">Admin kilépés</button>
+            <button type="button1" class="button2">Admin kilépés</button>
 		</a>
 
 		</div>

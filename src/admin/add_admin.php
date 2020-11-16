@@ -18,12 +18,6 @@
 			 </button>
 		  </a>
 
-		  <a href="administrator.php">
-			  <button type="button" class="button2">
-			   Beküldött cikkek
-			  </button>
-		  </a>
-
 		  <a href="users_articles.php">
 			<button type="button" class="button1">
 			  Felhasználók cikkei		
