@@ -36,17 +36,17 @@
 			  </button>
 		  </a>
           <a href="login.php">
-			  <button type="button" class="button1">
+			  <button type="button" class="button2">
 			   Belépés
 			  </button>
 		  </a>
           <a href="admin/admin.php">
-			  <button type="button" class="button2">
+			  <button type="button" class="button1">
 			   Admin 
 			  </button>
 		  </a>
           <a href="rangsor.php">
-			  <button type="button" class="button1">
+			  <button type="button" class="button2">
 			   Rangsor
 			  </button>
 		  </a>
