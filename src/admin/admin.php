@@ -31,13 +31,13 @@
 			   Cikk beküldése
 			  </button>
 		  </a>
-		  <a href="../register.php">
-			<button type="button" class="button2">
+		  <a href="../reg.php">
+			<button type="button" class="button0">
 			 Regisztráció
 			</button>
 		</a>
-		<a href="../user.php">
-			<button type="button" class="button2">
+		<a href="../login.php">
+			<button type="button" class="button1">
 			 Belépés
 			</button>
 		</a>
@@ -47,7 +47,7 @@
 			  </button>
 		  </a>
 		  <a href="../rangsor.php">
-			<button type="button" class="button2">
+			<button type="button" class="button1">
 			 Rangsor
 			</button>
 		</a>
@@ -62,7 +62,7 @@
 		<button class="admin-button" type="submit">Belépés</button>
 	</form>
 	<h1 class="version">
-		v.0.1
+		v.0.2
 	</h1>
     </div>
 </body>

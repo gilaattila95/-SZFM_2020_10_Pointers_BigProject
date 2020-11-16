@@ -7,11 +7,12 @@
 -- Kiszolgáló verziója: 10.1.34-MariaDB
 -- PHP verzió: 7.2.8
 
+CREATE DATABASE bigproject;
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
-
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -29,11 +30,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `admin_userek` (
-  `auid` int(11) NOT NULL,
+  `auid` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(50) COLLATE utf8_hungarian_ci NOT NULL,
   `jelszo` char(255) COLLATE utf8_hungarian_ci NOT NULL,
   `uname` varchar(60) COLLATE utf8_hungarian_ci NOT NULL,
-  `aktiv` int(11) NOT NULL DEFAULT '1'
+  `aktiv` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (auid)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 --
@@ -50,12 +52,14 @@ INSERT INTO `admin_userek` (`auid`, `email`, `jelszo`, `uname`, `aktiv`) VALUES
 --
 
 CREATE TABLE `cikkek` (
-  `cid` int(11) NOT NULL,
+  `cid` int(11) NOT NULL AUTO_INCREMENT,
   `ctext` text COLLATE utf8_hungarian_ci NOT NULL,
   `kep` varchar(60) COLLATE utf8_hungarian_ci DEFAULT NULL,
   `asent` int(11) NOT NULL,
+  `usent` int(11) NOT NULL,
   `aktiv` int(11) NOT NULL,
-  `kategoria` varchar(60) COLLATE utf8_hungarian_ci NOT NULL
+  `kategoria` varchar(60) COLLATE utf8_hungarian_ci NOT NULL,
+  PRIMARY KEY (cid)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 --
@@ -130,12 +134,13 @@ INSERT INTO `cikkek` (`cid`, `ctext`, `kep`, `asent`, `aktiv`, `kategoria`) VALU
 -- Tábla szerkezet ehhez a táblához `cég_userek`
 --
 
-CREATE TABLE `cég_userek` (
-  `cuid` int(11) NOT NULL,
+CREATE TABLE `ceg_userek` (
+  `cuid` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(50) COLLATE utf8_hungarian_ci NOT NULL,
   `jelszo` char(255) COLLATE utf8_hungarian_ci NOT NULL,
   `uname` varchar(60) COLLATE utf8_hungarian_ci NOT NULL,
-  `aktiv` int(11) NOT NULL DEFAULT '1'
+  `aktiv` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (cuid)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 -- --------------------------------------------------------
@@ -145,10 +150,13 @@ CREATE TABLE `cég_userek` (
 --
 
 CREATE TABLE `likes_number` (
-  `lnid` int(11) NOT NULL,
+  `lnid` int(11) NOT NULL AUTO_INCREMENT,
   `cid` int(11) NOT NULL,
   `likes` int(11) DEFAULT '1',
-  `dislikes` int(11) DEFAULT '1'
+  `dislikes` int(11) DEFAULT '1',
+  PRIMARY KEY (lnid),
+  CONSTRAINT FK_cid FOREIGN KEY (cid)
+  REFERENCES cikkek(cid)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 COMMIT;
 

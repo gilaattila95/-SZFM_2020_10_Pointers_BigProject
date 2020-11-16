@@ -1,3 +1,6 @@
+<?php
+  require_once("action.php");
+?>
 <!doctype html>
 <html>
 <head>
@@ -13,13 +16,13 @@
     <div class="container" align="center">
 		<div class="container" align="center">
 			<div class="vertical-center">	
-			  <a href="administrator"> <!--innen egy legördülő menüből választhatjuk ki, melyik kategóriára szeretnénk szűrni-->
+			  <a href="administrator.php"> <!--innen egy legördülő menüből választhatjuk ki, melyik kategóriára szeretnénk szűrni-->
 				 <button type="button" class="button1">
 				   Összes cikk 		
 				 </button>
 			  </a>
 
-			  <a href="sent_cikk.php">
+			  <a href="users_articles.php">
 				  <button type="button" class="button2">
 				   Beküldött cikkek
 				  </button>
@@ -38,9 +41,9 @@
 			 </a>
 			
 		   </a>
-			<a href="admin.php?event=kilepes" name="event" id="event" value="kilepes">
-				<button type="button" class="button2">Admin kilépés</button>
-			</a>
+		   <a href="../index.php?event=kilepes" name="event" id="event" value="kilepes">
+            <button type="button" class="button2">Admin kilépés</button>
+		</a>
 
 		</div>
         <h1 class="cikk-header">
@@ -66,7 +69,7 @@
 		    <button class="cikk-button" type="submit" >Beküldés</button>
 		</form>
         <h1 class="version">
-            v.0.1
+            v.0.2
         </h1>
     </div>
 </body>
