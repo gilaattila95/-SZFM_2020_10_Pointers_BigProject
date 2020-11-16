@@ -1,3 +1,6 @@
+<?php
+  require_once("user/action.php");
+?>
 <!doctype html>
 <html>
 <head>
@@ -22,40 +25,35 @@
 			   Viccesek
 			  </button>
 		  </a>
-		  <a href="cikk.php">
-			  <button type="button" class="button1">
-			   Cikk beküldése
-			  </button>
-		  </a>
 		  <a href="reg.php">
-			  <button type="button" class="button3">
+			  <button type="button" class="button2">
 			   Regisztráció
 			  </button>
 		  </a>
           <a href="login.php">
-			  <button type="button" class="button2">
+			  <button type="button" class="button1">
 			   Belépés
 			  </button>
 		  </a>
-          <a href="admin/admin.php">
-			  <button type="button" class="button1">
+          <a href="admin.php">
+			  <button type="button" class="button2">
 			   Admin 
 			  </button>
 		  </a>
-          <a href="rangsor.php">
-			  <button type="button" class="button2">
+          <a href="rank.php">
+			  <button type="button" class="button1">
 			   Rangsor
 			  </button>
 		  </a>
 		</div>
-	<form class="login" action="" method="post">
-		<label for="uname"><b>Felhasználónév</b></label><br>
-		<input type="text" placeholder="Enter Username" name="uname" id="uname" required><br><br>
-		<label for="psw"><b>Jelszó</b></label><br>
-		<input type="password" placeholder="Enter Password" name="psw" id="psw" required><br><br>
-		<input type="hidden" name="event" id="event" value="bejelentkezés">
-		<button class="admin-button" type="submit">Belépés</button>
-	</form>
+		<form class="login" action="" method="post">
+			<label for="uname"><b>Felhasználónév</b></label><br>
+			<input type="text" placeholder="Enter Username" name="uname" id="uname" required><br><br>
+			<label for="psw"><b>Jelszó</b></label><br>
+			<input type="password" placeholder="Enter Password" name="psw" id="psw" required><br><br>
+			<input type="hidden" name="event" id="event" value="bejelentkezés">
+			<button class="admin-button" type="submit">Belépés</button>
+		</form>
 	<h1 class="version">
 		v.0.2
 	</h1>

@@ -1,6 +1,7 @@
 <?php
-  require_once("user/action.php");
+  require_once("admin/action.php");
 ?>
+
 <!doctype html>
 <html>
 <head>
@@ -15,7 +16,7 @@
 	</h2>
     <div class="container" align="center">
 		<div class="vertical-center">	
-		  <a href="index.php">
+		<a href="index.php">
 			 <button type="button" class="button1">
 			   Érdekességek 		
 			 </button>
@@ -46,20 +47,14 @@
 			  </button>
 		  </a>
 		</div>
-	<div class="registration">
-		<form class="reg" action="" method="post">
-			<label for="email"><b>E-mail</b></label><br>
-			<input type="text" placeholder="Enter E-mail" name="email" id="reg_email" required><br><br>
-			<label for="uname"><b>Felhasználónév</b></label><br>
-			<input type="text" placeholder="Enter Username" name="uname" id="reg_uname" required><br><br>
-			<label for="psw"><b>Jelszó</b></label><br>
-			<input type="password" placeholder="Enter Password" name="psw" id="reg_psw" required><br><br>
-			<label for="psw2"><b>Jelszó megerősítése</b></label><br>
-			<input type="password" placeholder="Enter Password" name="psw2" id="reg_psw2" required><br><br>
-			<input type="hidden" name="event" id="event" value="regisztráció">
-			<button class="admin-button" type="submit">Regisztráció</button>
-		</form>
-	</div>
+	<form class="login" action="" method="post">
+		<label for="uname"><b>Felhasználónév</b></label><br>
+		<input type="text" placeholder="Enter Username" name="uname" id="uname" required><br><br>
+		<label for="psw"><b>Jelszó</b></label><br>
+		<input type="password" placeholder="Enter Password" name="psw" id="psw" required><br><br>
+		<input type="hidden" name="event" id="event" value="bejelentkezés">
+		<button class="admin-button" type="submit">Belépés</button>
+	</form>
 	<h1 class="version">
 		v.0.2
 	</h1>

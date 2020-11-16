@@ -37,7 +37,7 @@ if ($pEvent == "bejelentkezés") {
             $_SESSION["auid"] = $row[0];
             $_SESSION["uname"] = $row[3];
             if(isset($_SESSION["auid"])) {
-                header("location: administrator.php");
+                header("location:../src/admin/administrator.php");
                 exit;
             }
         } else { // Nem léphet be
