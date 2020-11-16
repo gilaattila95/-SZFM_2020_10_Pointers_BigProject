@@ -18,11 +18,12 @@
 			 </button>
 		  </a>
 
-		  <a href="administrator.php">
-			  <button type="button" class="button2">
-			   Beküldött cikkek
-			  </button>
-		  </a>
+		  <a href="users_articles.php">
+			<button type="button" class="button1">
+			  Felhasználók cikkei		
+			</button>
+		 </a>
+
 
 		  <a href="admin_send_article.php">
 			<button type="button" class="button1">
@@ -38,7 +39,7 @@
 		 
 	   </a>
 
-	   <a href="../index.php?event=kilepes" name="event" id="event" value="kilepes">
+		<a href="../index.php?event=kilepes" name="event" id="event" value="kilepes">
             <button type="button" class="button2">Admin kilépés</button>
 		</a>
 		  
@@ -67,7 +68,7 @@
 		    <button class="cikk-button" type="submit" >Frissít!</button>
 		</form>
         <h1 class="version">
-            v.0.2
+            v.0.1
         </h1>
     </div>
 </body>

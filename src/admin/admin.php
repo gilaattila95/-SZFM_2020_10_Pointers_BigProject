@@ -31,12 +31,12 @@
 			   Cikk beküldése
 			  </button>
 		  </a>
-		  <a href="../reg.php">
-			<button type="button" class="button0">
+		  <a href="../register.php">
+			<button type="button" class="button2">
 			 Regisztráció
 			</button>
 		</a>
-		<a href="../login.php">
+		<a href="../user.php">
 			<button type="button" class="button1">
 			 Belépés
 			</button>
