@@ -26,11 +26,6 @@
 			   Viccesek
 			  </button>
 		  </a>
-		  <a href="cikk.php">
-			  <button type="button" class="button1">
-			   Cikk beküldése
-			  </button>
-		  </a>
 		  <a href="reg.php">
 			  <button type="button" class="button3">
 			   Regisztráció
