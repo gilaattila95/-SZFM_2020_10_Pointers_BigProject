@@ -46,7 +46,7 @@
 
 	</div>
         <br>
-        <h3>Regisztrált felhasználók:</h3>
+        <h3>Aktív Adminok:</h3>
         </br>
 	<div class="container usersLista" align="center" style="margin: 10px;;">
 		<div class="vertical-center">
@@ -57,7 +57,37 @@
 				<th></th>
 			</tr>
 			<?php if ($result = $dbc->query($sql)) {
-				while ($row = $result->fetch_assoc()) { ?>
+				while ($row = $result->fetch_assoc()) { 
+					if($row["admin"] == 1) { ?>
+			<tr>
+				<td><?php print $row["uname"] ?></td>
+				<td><?php print $row["admin"] ?></td>
+				<td></td>
+			</tr>
+			<?php } }
+			} else {
+				$msg = "Nincs adminisztrátori jogosultságod!"; 
+			}
+			?>
+			</table>
+		</div>
+	</div>
+	<br>
+
+	<br>
+        <h3>Adminok hozzáadása:</h3>
+        </br>
+	<div class="container usersLista" align="center" style="margin: 10px;;">
+		<div class="vertical-center">
+		<table>
+			<tr>
+				<th>Név</th>
+				<th>Admin</th>
+				<th></th>
+			</tr>
+			<?php if ($result = $dbc->query($sql)) {
+				while ($row = $result->fetch_assoc()) { 
+					if($row["admin"] == 0) {?>
 			<tr>
 				<td><?php print $row["uname"] ?></td>
 				<td><?php print $row["admin"] ?></td>
@@ -68,7 +98,7 @@
 					</form>
 				</td>
 			</tr>
-			<?php } 
+			<?php } }
 			} else {
 				$msg = "Nincs adminisztrátori jogosultságod!"; 
 			}
