@@ -188,4 +188,18 @@ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "article") {
     } 
 }
 
+//ADMIN FELÜLETEN REGISZTRÁLT FELHASZNÁLÓK MENGÉZÉSE
+if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "add_admin") {
+    if (isset($_SESSION["auid"])) {
+        $sql ="select * from ceg_userek";
+        $users = mysqli_query($dbc, $sql);
+
+        if($pEvent == "aktivalas") {  
+            $cuid = $_POST['cuid'];
+            $sql = "update ceg_userek set admin = 1 where cuid=$cuid";
+            header("location: add_admin.php");
+        }
+    }
+ }
+
 ?>

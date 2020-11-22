@@ -140,6 +140,7 @@ CREATE TABLE `ceg_userek` (
   `jelszo` char(255) COLLATE utf8_hungarian_ci NOT NULL,
   `uname` varchar(60) COLLATE utf8_hungarian_ci NOT NULL,
   `aktiv` int(11) NOT NULL DEFAULT '1',
+  `admin` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (cuid)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 

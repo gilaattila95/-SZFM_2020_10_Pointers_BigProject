@@ -1,3 +1,6 @@
+<?php
+  require_once("action.php");
+?>
 <!doctype html>
 <html>
 <head>
@@ -26,7 +29,7 @@
 
 
 		  <a href="admin_send_article.php">
-			<button type="button" class="button1">
+			<button type="button" class="button2">
 			  Cikkfeltöltés		
 			</button>
 		 </a>
@@ -43,39 +46,37 @@
 
 	</div>
         <br>
-        <h3>Bejelentkezett felhasználók:</h3>
+        <h3>Regisztrált felhasználók:</h3>
         </br>
 	<div class="container usersLista" align="center" style="margin: 10px;;">
 		<div class="vertical-center">
-			<?php 
-			if ($result = $dbc->query($sql)) {
+		<table>
+			<tr>
+				<th>Név</th>
+				<th>Admin</th>
+				<th></th>
+			</tr>
+			<?php if ($result = $dbc->query($sql)) {
 				while ($row = $result->fetch_assoc()) { ?>
-					<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; width: 800px; background-color:white;">
-						<div class="container" style="padding: 2px 16px; text-align:left">
-							<p><?php print truncate($row["ctext"], 60) ?></p>
-						</div>
-					</div> 
+			<tr>
+				<td><?php print $row["uname"] ?></td>
+				<td><?php print $row["admin"] ?></td>
+				<td>
+					<form action="" method="post">
+						<input type="hidden" name="cuid" value="<?php print $row["cuid"] ?>">
+						<input type="submit" name="event" value="aktivalas">
+					</form>
+				</td>
+			</tr>
 			<?php } 
 			} else {
 				$msg = "Nincs adminisztrátori jogosultságod!"; 
 			}
 			?>
+			</table>
 		</div>
 	</div>
-
 	<br>
-	<h3>A fenti felhasználók közül admin jogot kapjon:</h3>
-	</br>
-	<form action="" method="post" enctype="multipart/form-data">
-		<textarea class="nev-place" 
-					type="text" 
-				   cols="60"
-				  rows="10"
-				  placeholder="Az adminná kívánt felhasználó neve:"
-				  name="ctext" style="margin-bottom:  10px;" required></textarea>
-		  <br>
-		  <button class="cikk-button" type="submit" >Aktiválás</button>
-	  </form>
 
 	<h1 class="version">
 		v.0.2
