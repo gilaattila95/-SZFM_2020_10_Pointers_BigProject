@@ -15,7 +15,7 @@
 	</h2>
     <div class="container" align="center">
 		<div class="vertical-center">	
-		  <a href="administrator.php"> <!--innen egy legördülő menüből választhatjuk ki, melyik kategóriára szeretnénk szűrni-->
+		  <a href="administrator.php">
 			 <button type="button" class="button1">
 			   Összes cikk 		
 			 </button>
@@ -53,6 +53,7 @@
 		<table>
 			<tr>
 				<th>Név</th>
+				<th>Beküldött cikkek száma</th>
 				<th>Admin</th>
 				<th></th>
 			</tr>
@@ -60,11 +61,12 @@
 				while ($row = $result->fetch_assoc()) { ?>
 			<tr>
 				<td><?php print $row["uname"] ?></td>
+				<td><?php print $row["count(usent)"] ?></td>
 				<td><?php print $row["admin"] ?></td>
 				<td>
 					<form action="" method="post">
 						<input type="hidden" name="cuid" value="<?php print $row["cuid"] ?>">
-						<input type="submit" name="event" value="aktivalas">
+						<input type="submit" name="event" value="Button">
 					</form>
 				</td>
 			</tr>

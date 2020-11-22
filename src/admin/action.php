@@ -188,6 +188,20 @@ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "article") {
     } 
 }
 
+//ADMIN AKTIVÁLÁS
+if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "add_admin") {
+    if (isset($_SESSION["auid"])) {
+        $sql ="select * from ceg_userek";
+        $users = mysqli_query($dbc, $sql);
+
+        if($pEvent == "aktivalas") {  
+            $cuid = $_POST['cuid'];
+            $sql = "update ceg_userek set admin = 1 where cuid=$cuid";
+            header("location: add_admin.php");
+        }
+    }
+ }
+
 //ADMIN FELÜLETEN REGISZTRÁLT FELHASZNÁLÓK MENGÉZÉSE
 if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "add_admin") {
     if (isset($_SESSION["auid"])) {
@@ -201,5 +215,16 @@ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "add_admin") {
         }
     }
  }
+
+ //Regisztrált felhasználók listázása
+if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "registered_users") {
+    if (isset($_SESSION["auid"])) {
+        $sql ="select uname, admin, count(usent) from ceg_userek left outer join cikkek
+                    on cuid = usent
+                    group by cuid, uname";
+        $users = mysqli_query($dbc, $sql);
+    }
+ }
+
 
 ?>
