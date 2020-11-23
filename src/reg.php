@@ -46,20 +46,26 @@
 			  </button>
 		  </a>
 		</div>
-	<div class="registration">
-		<form class="reg" action="" method="post">
-			<label for="email"><b>E-mail</b></label><br>
-			<input type="text" placeholder="Enter E-mail" name="email" id="reg_email" required><br><br>
-			<label for="uname"><b>Felhasználónév</b></label><br>
-			<input type="text" placeholder="Enter Username" name="uname" id="reg_uname" required><br><br>
-			<label for="psw"><b>Jelszó</b></label><br>
-			<input type="password" placeholder="Enter Password" name="psw" id="reg_psw" required><br><br>
-			<label for="psw2"><b>Jelszó megerősítése</b></label><br>
-			<input type="password" placeholder="Enter Password" name="psw2" id="reg_psw2" required><br><br>
-			<input type="hidden" name="event" id="event" value="regisztráció">
-			<button class="admin-button" type="submit">Regisztráció</button>
-		</form>
-	</div>
+	
+	<form method="post" action="reg.php">
+
+		<?php include('errors.php'); ?>
+
+		<div class="login">
+			<label>Felhasználónév:</label><br>
+			<input type="text" name="username" value="<?php echo $username; ?>"><br>
+			<label>Email:</label><br>
+			<input type="email" name="email" value="<?php echo $email; ?>"><br>
+			<label>Jelszó:</label><br>
+			<input type="password" name="password_1"><br>
+			<label>Jelszó mégegyszer:</label><br>
+			<input type="password" name="password_2"><br><br>
+			<button type="submit" class="admin-button" name="reg_user">Register</button>
+		</div>
+		<p>
+			Már van fiókod?<a href="login.php">Katt ide!</a>
+		</p>
+	</form>
 	<h1 class="version">
 		v.0.2
 	</h1>
