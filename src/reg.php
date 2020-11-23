@@ -49,7 +49,7 @@
 	
 	<form method="post" action="reg.php">
 
-		<?php include('errors.php'); ?>
+		<?php include('user/errors.php'); ?>
 
 		<div class="login">
 			<label>Felhasználónév:</label><br>
