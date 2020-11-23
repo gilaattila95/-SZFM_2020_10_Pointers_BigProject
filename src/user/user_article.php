@@ -36,22 +36,26 @@
 			</a> 
         </div>
 	</div>
-	<div class="container adminCikkLista" align="center" style="margin-top: 10px;;">
-		<div class="vertical-center">
-			<?php 
-			if ($result = $dbc->query($sql)) {
+	<div class="welcome" align="center" style="font-size:50px;margin-top: 20px; font-weight: bold; color:white;" >
+		<?php
+			$username=$_SESSION['username'];
+			print ("Üdvüzlünk: $username!");
+		?>
+	</div>
+	<div class="container adminCikkLista" align="center" style="margin-top: 10px;">
+		<div class="vertical-center">		
+			<?php 		
+				$username=$_SESSION['username'];
+				$sql ="select * from cikkek where usent=(select cuid from ceg_userek where uname='$username' and aktiv)";
+				$cikkek = mysqli_query($db, $sql);
+			if ($result = $db->query($sql)) {
 				while ($row = $result->fetch_assoc()) { ?>
 					<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; width: 800px; background-color:white;">
 						<div class="container" style="padding: 2px 16px; text-align:left">
 							<p><?php print truncate($row["ctext"], 60) ?></p>
 						</div>
 					</div> 
-			<?php } 
-			} else {
-				$msg = "Nincs adminisztrátori jogosultságod!"; 
-				
-			}
-			?>
+
 		</div>
 	</div>
     <h1 class="version">
