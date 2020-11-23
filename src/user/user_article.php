@@ -55,7 +55,12 @@
 							<p><?php print truncate($row["ctext"], 60) ?></p>
 						</div>
 					</div> 
-
+			<?php } 
+				} else {
+					$msg = ""; 
+					
+				}
+			?>	
 		</div>
 	</div>
     <h1 class="version">
