@@ -48,7 +48,7 @@
 		</div>
 		<form method="post" action="login.php"> 
    
-   <?php include('errors.php'); ?> 
+   <?php include('user/errors.php'); ?> 
 
    <div class="login"> 
 	   <label>Felhasználónév:</label> <br>
