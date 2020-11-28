@@ -1,4 +1,4 @@
-/*Main styl for the portal*/
+/*Main style for the portal*/
 
 body{
 background-image: url("doc/background.jpg");
@@ -49,7 +49,7 @@ text-align: center;
 .version{
     
     font-size:1vw;
-    position: absolute;
+    position: fixed;
     bottom: 8px;
     right: 16px;
     
