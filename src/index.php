@@ -36,12 +36,12 @@
 			   Belépés
 			  </button>
 		  </a>
-          <a href="admin/admin.php">
+          <a href="admin.php">
 			  <button type="button" class="button2">
 			   Admin 
 			  </button>
 		  </a>
-          <a href="rangsor.php">
+          <a href="rank.php">
 			  <button type="button" class="button1">
 			   Rangsor
 			  </button>

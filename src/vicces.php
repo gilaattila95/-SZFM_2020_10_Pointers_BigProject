@@ -26,7 +26,7 @@
 				</button>
 			</a>
 			<a href="reg.php">
-				<button type="button" class="button2">
+				<button type="button" class="button3">
 					Regisztráció
 				</button>
 			</a>
