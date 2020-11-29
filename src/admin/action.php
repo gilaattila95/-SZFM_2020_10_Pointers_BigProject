@@ -22,30 +22,48 @@ $ctext = htmlspecialchars(filter_input(INPUT_POST, "ctext"));
 $kategoria = filter_input(INPUT_POST, "kategoria");
 
 if ($gEvent == "kilepes") {
+    unset($_SESSION["cuid"]);
     unset($_SESSION["auid"]);
     unset($_SESSION["uname"]);
     header("location: admin.php");
 }
 
 if ($pEvent == "bejelentkezés") {
-    $sql = "select * from admin_userek where uname = '$uname' and aktiv = 1";
+    $sqla = "select * from admin_userek where uname = '$uname' and aktiv = 1";
+    $sqlf = "select * from ceg_userek where uname = '$uname' and admin = 1";
     
-    if($result = mysqli_query($dbc, $sql)) {
+    if($result = mysqli_query($dbc, $sqla)) {
         
         $row = mysqli_fetch_row($result);
         if(password_verify($psw, $row[2])) {// Beléphet
             $_SESSION["auid"] = $row[0];
             $_SESSION["uname"] = $row[3];
             if(isset($_SESSION["auid"])) {
-                header("location:../admin/administrator.php");
+                header("location:../src/admin/administrator.php");
+                exit;
+            }
+        } 
+    }
+
+    if($result = mysqli_query($dbc, $sqlf)) {
+        
+        $row = mysqli_fetch_row($result);
+        if(password_verify($psw, $row[2])) {// Beléphet
+            $_SESSION["cuid"] = $row[0];
+            $_SESSION["uname"] = $row[3];
+            if(isset($_SESSION["auid"])) {
+                header("location:../src/admin/administrator.php");
                 exit;
             }
         } else { // Nem léphet be
             $uzenet = "Sikertelen belépés!";
+            phpAlert($uzenet);
         }  
     }
 
+
 } else if ($gEvent == "kilepes") {
+        unset($_SESSION["cuid"]);
         unset($_SESSION["auid"]);
         unset($_SESSION["uname"]);
         header("location: admin.php");
