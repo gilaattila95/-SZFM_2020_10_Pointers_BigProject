@@ -164,7 +164,7 @@ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "users_articles") {
  }
 
  //ADMIN FELÜLETEN EGY CIKK MEGNÉZÉSE
- if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "article") {
+ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "edit_article") {
     if (isset($_SESSION["auid"])) {
         $cid = $_GET['cid'];
         $sql ="select * from cikkek where cid='$cid'";
@@ -173,7 +173,7 @@ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "users_articles") {
 }
 
 //FELHASZNALOK ALTAL BEKULDOTT CIKKEK AKTIVALASA VAGY TORLESE
-if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "article") {
+if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "edit_article") {
     if (isset($_SESSION["auid"])) {
         if($pEvent == "aktivalas") {  
             $cid = $_GET['cid'];
@@ -202,6 +202,50 @@ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "article") {
                 $msg ="A cikk törlése sikertelen!";
                 phpAlert($msg);
             }
+        }   
+        if($pEvent == "frissit") {  
+            $cid = $_GET['cid'];
+
+            if ($_FILES['kep']['size'] == 0 && $_FILES['kep']['error'] == 0) {
+                $sql = "update cikkek set ctext = '$ctext', kategoria = '$kategoria' where cid=$cid";
+                if(mysqli_query($dbc, $sql)) {
+                    $_SESSION['msg'] ="A cikk frissítve lett!";
+                    header("location: users_articles.php");
+                    exit;
+                    
+                } else {
+                    $msg ="A cikk frissítése sikertelen!";
+                    phpAlert($msg);
+                }
+            } else {
+                $filename = $_FILES["kep"]["name"]; 
+                $tempname = $_FILES["kep"]["tmp_name"];     
+                $folder = "../images/".$filename; 
+               
+                if (($_FILES["kep"]["type"] == "image/jpeg" || $_FILES["kep"]["type"] == "image/pjpeg") || $_FILES["kep"]["type"] == "image/png" || $_FILES["kep"]["type"] == "image/jpg" || $_FILES["kep"]["size"] == 0 && isset($ctext) ) {
+                    $sql = "update cikkek set ctext = '$ctext', kep = '$filename', kategoria = '$kategoria' where cid=$cid";
+                    if(mysqli_query($dbc, $sql)) {
+                        if (move_uploaded_file($tempname, $folder))  { 
+                            $_SESSION['msg'] = "A képfeltöltés sikeres!";
+                            header("location: users_articles.php"); 
+                            phpAlert($msg);
+                        
+                        } else { 
+                            $msg = "A képfeltöltés sikertelen!"; 
+                            phpAlert($msg);
+                        }
+                        $_SESSION['msg'] = "A cikk frissítése sikeres!";
+                        header("location: users_articles.php");
+                        phpAlert($msg);
+                    } else {
+                        $msg = "A cikk frissítése sikertelen!"; 
+                        phpAlert($msg);
+                    }
+                } else {
+                    $msg = "A képformátum nem megfelelő!"; 
+                    phpAlert($msg);
+                }
+            }  
         }   
     } 
 }
