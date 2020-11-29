@@ -48,9 +48,10 @@
         <br>
         <h3>Regisztrált felhasználók:</h3>
         </br>
-	<div class="container usersLista" align="center" style="margin: 10px;;">
+	<div class="container usersLista" align="center" style="margin: 10px;">
+	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Keresés név alapján..." title="Adj meg egy nevet.">
 		<div class="vertical-center">
-		<table>
+		<table id="myTable" style="margin-top: 15px;">
 			<tr>
 				<th>Név</th>
 				<th>Beküldött cikkek száma</th>
@@ -84,5 +85,25 @@
 		v.0.2
 	</h1>
     </div>
+	<script>
+		function myFunction() {
+			var input, filter, table, tr, td, i, txtValue;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("myTable");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[0];
+				if (td) {
+				txtValue = td.textContent || td.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					tr[i].style.display = "";
+				} else {
+					tr[i].style.display = "none";
+				}
+				}       
+			}
+		}
+	</script>
 </body>
 </html>
