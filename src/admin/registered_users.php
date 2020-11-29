@@ -22,21 +22,27 @@
 		  </a>
 
 		  <a href="users_articles.php">
-			<button type="button" class="button1">
+			<button type="button" class="button2">
 			  Felhasználók cikkei		
 			</button>
 		 </a>
 
 
 		  <a href="admin_send_article.php">
-			<button type="button" class="button2">
+			<button type="button" class="button1">
 			  Cikkfeltöltés		
 			</button>
 		 </a>
 
 		 <a href="add_admin.php">
-			<button type="button" class="button1">
+			<button type="button" class="button2">
 			  Admin hozzáadása	
+			</button>
+		 </a>
+
+		 <a href="registered_users.php">
+			<button type="button" class="button1">
+			  Felhasználók		
 			</button>
 		 </a>
 
