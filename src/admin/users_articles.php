@@ -49,8 +49,15 @@
 			  Admin hozzáadása	
 			</button>
 		 </a>
+
+		 <a href="registered_users.php">
+			<button type="button" class="button1">
+			  Felhasználók		
+			</button>
+		 </a>
+
 		<a href="../index.php?event=kilepes" name="event" id="event" value="kilepes">
-            <button type="button" class="button1">Admin kilépés</button>
+            <button type="button" class="button2">Admin kilépés</button>
 		</a>  
 	</div>
 	<div class="container adminCikkLista" align="center" style="margin-top: 10px;">

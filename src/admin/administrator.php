@@ -39,6 +39,12 @@
 			</button>
 		 </a>
 
+		 <a href="registered_users.php">
+			<button type="button" class="button1">
+			  Felhasználók		
+			</button>
+		 </a>
+
 	   <a href="../index.php?event=kilepes" name="event" id="event" value="kilepes">
             <button type="button1" class="button2">Admin kilépés</button>
 		</a>
