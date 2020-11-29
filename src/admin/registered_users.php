@@ -54,26 +54,26 @@
         <br>
         <h3>Regisztrált felhasználók:</h3>
         </br>
-	<div class="container usersLista" align="center" style="margin: 10px;">
+	<div class="container usersLista" align="center" style="margin: 10px; width: 550px;">
 	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Keresés név alapján..." title="Adj meg egy nevet.">
 		<div class="vertical-center">
 		<table id="myTable" style="margin-top: 15px;">
 			<tr>
-				<th>Név</th>
-				<th>Beküldött cikkek száma</th>
-				<th>Admin</th>
+				<th style="text-align: center;">Név</th>
+				<th style="text-align: center;">Beküldött cikkek száma</th>
+				<th style="text-align: center;">Admin</th>
 				<th></th>
 			</tr>
 			<?php if ($result = $dbc->query($sql)) {
 				while ($row = $result->fetch_assoc()) { ?>
 			<tr>
 				<td><?php print $row["uname"] ?></td>
-				<td><?php print $row["count(usent)"] ?></td>
-				<td><?php print $row["admin"] ?></td>
+				<td style="text-align: center;"><?php print $row["count(usent)"] ?></td>
+				<td style="text-align: center;"><?php print $row["admin"] ?></td>
 				<td>
 					<form action="" method="post">
 						<input type="hidden" name="cuid" value="<?php print $row["cuid"] ?>">
-						<input type="submit" name="event" value="Button">
+						<input type="submit" name="event" value="Törlés">
 					</form>
 				</td>
 			</tr>

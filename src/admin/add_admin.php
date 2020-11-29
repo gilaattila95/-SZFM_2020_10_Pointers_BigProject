@@ -54,12 +54,12 @@
         <br>
         <h3>Aktív Adminok:</h3>
         </br>
-	<div class="container usersLista" align="center" style="margin: 10px;;">
+	<div class="container usersLista" align="center" style="margin: 10px;">
 		<div class="vertical-center">
-		<table>
+		<table id="myTable" style="width: 500px;">
 			<tr>
 				<th>Név</th>
-				<th>Admin</th>
+				<th style="text-align: center;">Admin</th>
 				<th></th>
 			</tr>
 			<?php if ($result = $dbc->query($sql)) {
@@ -67,7 +67,7 @@
 					if($row["admin"] == 1) { ?>
 			<tr>
 				<td><?php print $row["uname"] ?></td>
-				<td><?php print $row["admin"] ?></td>
+				<td style="text-align: center;"><?php print $row["admin"] ?></td>
 				<td></td>
 			</tr>
 			<?php } }
@@ -85,10 +85,10 @@
         </br>
 	<div class="container usersLista" align="center" style="margin: 10px;;">
 		<div class="vertical-center">
-		<table>
+		<table id="myTable" style="width: 500px;">
 			<tr>
 				<th>Név</th>
-				<th>Admin</th>
+				<th style="text-align: center;">Admin</th>
 				<th></th>
 			</tr>
 			<?php if ($result = $dbc->query($sql)) {
@@ -96,8 +96,8 @@
 					if($row["admin"] == 0) {?>
 			<tr>
 				<td><?php print $row["uname"] ?></td>
-				<td><?php print $row["admin"] ?></td>
-				<td>
+				<td style="text-align: center;"><?php print $row["admin"] ?></td>
+				<td style="text-align: center;">
 					<form action="" method="post">
 						<input type="hidden" name="cuid" value="<?php print $row["cuid"] ?>">
 						<input type="submit" name="event" value="aktivalas">
