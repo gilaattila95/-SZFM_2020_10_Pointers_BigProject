@@ -68,12 +68,12 @@
 				while ($row = $result->fetch_assoc()) { ?>
 			<tr>
 				<td><?php print $row["uname"] ?></td>
-				<td style="text-align: center;"><?php print $row["count(usent)"] ?></td>
-				<td style="text-align: center;"><?php print $row["admin"] ?></td>
+				<td style="text-align: center;"><?php print $row["count(usent)"]; ?></td>
+				<td style="text-align: center;"><?php print $row["admin"]; ?></td>
 				<td>
-					<form action="" method="post">
-						<input type="hidden" name="cuid" value="<?php print $row["cuid"] ?>">
-						<input type="submit" name="event" value="Törlés">
+				<form action="" method="post">
+						<input type="hidden" name="cuid" value="<?php print $row["cuid"]; ?>">
+						<button type="submit" name="event" value="torles">Törlés</button>
 					</form>
 				</td>
 			</tr>

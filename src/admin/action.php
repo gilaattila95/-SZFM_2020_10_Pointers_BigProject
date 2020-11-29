@@ -113,29 +113,43 @@ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "admin_send_article") {
     if (isset($_SESSION["auid"])) { 
         $auid = $_SESSION["auid"];
         if($pEvent == "cikkFel") { 
-            $filename = $_FILES["kep"]["name"]; 
-            $tempname = $_FILES["kep"]["tmp_name"];     
-            $folder = "../images/".$filename; 
-            $sql = "insert into cikkek (ctext, kep, asent, usent, aktiv, kategoria) values ('$ctext', '$filename', $auid, 0, 1, '$kategoria')";
-            if (($_FILES["kep"]["type"] == "image/jpeg" || $_FILES["kep"]["type"] == "image/pjpeg") || $_FILES["kep"]["type"] == "image/png" || $_FILES["kep"]["type"] == "image/jpg" || $_FILES["kep"]["size"] == 0 && isset($ctext) ) {
+            if ($_FILES['kep']['size'] == 0 && $_FILES['kep']['error'] == 0) {
+                $sql = "insert into cikkek (ctext, kep, asent, usent, aktiv, kategoria) values ('$ctext', '', $auid, 0, 1, '$kategoria')";
                 if(mysqli_query($dbc, $sql)) {
-                    if (move_uploaded_file($tempname, $folder))  { 
-                        $msg = "A képfeltöltés sikeres!"; 
-                        phpAlert($msg);
+                    $_SESSION['msg'] ="A cikkfeltöltés sikeres!";
+                    header("location: users_articles.php");
+                    exit;
                     
-                    } else { 
-                        $msg = "A képfeltöltés sikertelen!"; 
-                        phpAlert($msg);
-                    }
-                    $msg = "A cikkfeltöltés sikeres!"; 
-                    phpAlert($msg);
                 } else {
-                    $msg = "A cikkfeltöltés sikertelen!"; 
+                    $msg ="A cikkfeltöltés sikertelen!";
                     phpAlert($msg);
                 }
             } else {
-                $msg = "A képformátum nem megfelelő!"; 
-                phpAlert($msg);
+                $filename = $_FILES["kep"]["name"]; 
+                $tempname = $_FILES["kep"]["tmp_name"];     
+                $folder = "../images/".$filename; 
+            
+                if (($_FILES["kep"]["type"] == "image/jpeg" || $_FILES["kep"]["type"] == "image/pjpeg") || $_FILES["kep"]["type"] == "image/png" || $_FILES["kep"]["type"] == "image/jpg" || $_FILES["kep"]["size"] == 0 && isset($ctext) ) {
+                    $sql = "insert into cikkek (ctext, kep, asent, usent, aktiv, kategoria) values ('$ctext', '$filename', $auid, 0, 1, '$kategoria')";
+                    if(mysqli_query($dbc, $sql)) {
+                        if (move_uploaded_file($tempname, $folder))  { 
+                            $msg = "A képfeltöltés sikeres!"; 
+                            //phpAlert($msg);
+                        
+                        } else { 
+                            $msg = "A képfeltöltés sikertelen!"; 
+                            //phpAlert($msg);
+                        }
+                        $msg = "A cikkfeltöltés sikeres!"; 
+                        phpAlert($msg);
+                    } else {
+                        $msg = "A cikkfeltöltés sikertelen!"; 
+                        phpAlert($msg);
+                    }
+                } else {
+                    $msg = "A képformátum nem megfelelő!"; 
+                    phpAlert($msg);
+                }
             }
         }
     } 
@@ -281,10 +295,18 @@ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "add_admin") {
  //Regisztrált felhasználók listázása
 if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "registered_users") {
     if (isset($_SESSION["auid"])) {
-        $sql ="select uname, admin, count(usent) from ceg_userek left outer join cikkek
+        $sql ="select cuid, uname, admin, count(usent) from ceg_userek left outer join cikkek
                     on cuid = usent
                     group by cuid, uname";
         $users = mysqli_query($dbc, $sql);
+
+        if($pEvent == "torles") {
+            $cuid = $_POST['cuid'];
+            $sql = "delete from ceg_userek where cuid = $cuid";
+            $msg = "A felhasználó törölve lett!"; 
+            phpAlert($msg);
+            header("location: registered_users.php"); 
+        }
     }
  }
 

@@ -83,7 +83,7 @@
 	<br>
         <h3>Adminok hozzáadása:</h3>
         </br>
-	<div class="container usersLista" align="center" style="margin: 10px;;">
+	<div class="container usersLista" align="center" style="margin: 10px;">
 		<div class="vertical-center">
 		<table id="myTable" style="width: 500px;">
 			<tr>
