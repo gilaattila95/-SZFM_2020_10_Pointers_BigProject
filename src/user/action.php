@@ -93,11 +93,17 @@
 		}
 	}
 
-    //HA HOSSZÚ A SZÖVEG, LEGYEN RÖVID ÉS '...'
-    function truncate($str, $chars, $end = '...') {
-        if (strlen($str) <= $chars) return $str;
-        $new = substr($str, 0, $chars + 1);
-        return substr($new, 0, strrpos($new, ' ')) . $end;
-	}
+//HA HOSSZÚ A SZÖVEG, LEGYEN RÖVID ÉS '...'
+function truncate($str, $chars, $end = '...') {
+	if (strlen($str) <= $chars) return $str;
+	$new = substr($str, 0, $chars + 1);
+	return substr($new, 0, strrpos($new, ' ')) . $end;
+}
 
+//Rangsor kilistázása like-ok alapján
+if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "user_rank") {
+	$uname = mysqli_real_escape_string($db, $_SESSION['username']);
+    $sql ="select * from cikkek inner join likes_number on cikkek.cid=likes_number.cid where usent=(SELECT cuid FROM ceg_userek WHERE uname='$uname') order by likes desc ";
+    $cikkek = mysqli_query($db, $sql);
+}
 ?>
