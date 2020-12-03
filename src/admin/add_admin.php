@@ -13,6 +13,7 @@
 	<h2 class="header">
 		Tény Portál
 	</h2>
+	<?php  if (isset($_SESSION["logged"]) && $_SESSION["logged"] == true){ ?>
     <div class="container" align="center">
 		<div class="vertical-center">	
 		  <a href="administrator.php"> <!--innen egy legördülő menüből választhatjuk ki, melyik kategóriára szeretnénk szűrni-->
@@ -46,8 +47,8 @@
 			</button>
 		 </a>
 
-		 <a href="../index.php?event=kilepes" name="event" id="event" value="kilepes">
-            <button type="button" class="button2">Admin kilépés</button>
+		 <a href="logout.php" name="event" id="event" value="kilepes">
+            <button type="button1" class="button2">Admin kilépés</button>
 		</a>
 
 	</div>
@@ -113,7 +114,9 @@
 		</div>
 	</div>
 	<br>
-
+	<?php } else {
+            header("location:../admin.php");
+		} ?>	
 	<h1 class="version">
 		v.0.2
 	</h1>

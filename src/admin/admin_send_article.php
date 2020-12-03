@@ -13,6 +13,7 @@
 	<h2 class="header">
 		Tény Portál
 	</h2>
+	<?php  if (isset($_SESSION["logged"]) && $_SESSION["logged"] == true){ ?>
     <div class="container" align="center">
 		<div class="container" align="center">
 			<div class="vertical-center">	
@@ -47,9 +48,9 @@
 		 	</a>
 			
 		   </a>
-		   <a href="../index.php?event=kilepes" name="event" id="event" value="kilepes">
-            <button type="button1" class="button2">Admin kilépés</button>
-		</a>
+		   <a href="logout.php" name="event" id="event" value="kilepes">
+            	<button type="button1" class="button2">Admin kilépés</button>
+			</a>
 
 		</div>
         <h1 class="cikk-header">
@@ -74,6 +75,9 @@
             <input type="hidden" name="event" id="event" value="cikkFel">
 		    <button class="cikk-button" type="submit" >Beküldés</button>
 		</form>
+		<?php } else {
+            header("location:../admin.php");
+		} ?>
         <h1 class="version">
             v.0.2
         </h1>

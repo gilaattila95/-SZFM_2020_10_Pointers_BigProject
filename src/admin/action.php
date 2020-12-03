@@ -21,12 +21,7 @@ $psw = htmlspecialchars(filter_input(INPUT_POST, "psw"));
 $ctext = htmlspecialchars(filter_input(INPUT_POST, "ctext"));
 $kategoria = filter_input(INPUT_POST, "kategoria");
 
-if ($gEvent == "kilepes") {
-    unset($_SESSION["cuid"]);
-    unset($_SESSION["auid"]);
-    unset($_SESSION["uname"]);
-    header("location: admin.php");
-}
+
 
 if ($pEvent == "bejelentkezés") {
     $sqla = "select * from admin_userek where uname = '$uname' and aktiv = 1";
@@ -35,12 +30,12 @@ if ($pEvent == "bejelentkezés") {
     if($result = mysqli_query($dbc, $sqla)) {
         
         $row = mysqli_fetch_row($result);
-        if(password_verify($psw, $row[2])) {// Beléphet
-            $_SESSION["auid"] = $row[0];
-            $_SESSION["uname"] = $row[3];
-            if(isset($_SESSION["auid"])) {
+        if(md5($psw) == $row[2]) {// Beléphet
+            $_SESSION['logged'] = true;
+            $_SESSION['auid'] = $row[0];
+            $_SESSION['uname'] = $row[3];
+            if($_SESSION['logged'] == true && isset($_SESSION['uname'])) {
                 header("location:../src/admin/administrator.php");
-                exit;
             }
         } 
     }
@@ -48,12 +43,12 @@ if ($pEvent == "bejelentkezés") {
     if($result = mysqli_query($dbc, $sqlf)) {
         
         $row = mysqli_fetch_row($result);
-        if(password_verify($psw, $row[2])) {// Beléphet
-            $_SESSION["cuid"] = $row[0];
+        if(md5($psw) == $row[2]) {// Beléphet
+            $_SESSION['logged'] = true;
+            $_SESSION["auid"] = $row[0];
             $_SESSION["uname"] = $row[3];
-            if(isset($_SESSION["auid"])) {
+            if($_SESSION['logged'] == true && isset($_SESSION['uname'])) {
                 header("location:../src/admin/administrator.php");
-                exit;
             }
         } else { // Nem léphet be
             $uzenet = "Sikertelen belépés!";
@@ -61,13 +56,7 @@ if ($pEvent == "bejelentkezés") {
         }  
     }
 
-
-} else if ($gEvent == "kilepes") {
-        unset($_SESSION["cuid"]);
-        unset($_SESSION["auid"]);
-        unset($_SESSION["uname"]);
-        header("location: admin.php");
-    }
+}
 
 //ADMIN FELÜLETEN AZ ÖSSZES CIKK LISTÁZÁSA
 if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "administrator") {
