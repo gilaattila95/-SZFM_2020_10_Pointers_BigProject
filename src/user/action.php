@@ -36,8 +36,8 @@
 		
 		$sql_u = "SELECT * FROM ceg_userek WHERE uname='$username'";
 		$sql_e = "SELECT * FROM ceg_userek WHERE email='$email'";
-		$res_u = mysqli_query($dbc, $sql_u);
-		$res_e = mysqli_query($dbc, $sql_e);
+		$res_u = mysqli_query($db, $sql_u);
+		$res_e = mysqli_query($db, $sql_e);
   
 		if (mysqli_num_rows($res_u) > 0) {
 			array_push($errors, "Username already taken!"); 	

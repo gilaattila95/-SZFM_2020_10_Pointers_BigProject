@@ -1,7 +1,4 @@
-<?php
-  require_once("action.php");
-?>
-
+<?php require_once("action.php");?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,9 +8,9 @@
 </head>
 <body>
 	<h2 class="header">
-	Tény Portál
+		Tény Portál
 	</h2>
-    <div class="container" align="center">
+    <div align="center">
     	<div class="vertical-center">	
 			<a href="index.php">
 				<button type="button" class="button1">
@@ -59,9 +56,11 @@
 				<i id="fa fa-thumbs-down" class="fa fa-thumbs-down"></i>
 				<script src="main.js"></script>
 			</div>
-			<button type="button" class="back">	
-						Vissza
-			</button>
+			<a href="">
+				<button type="button" class="back">	
+							Vissza
+				</button>
+			</a>
 			<a href="vicces.php">
 				<button type="button" class="forward">
 					Következő

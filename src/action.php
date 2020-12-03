@@ -11,7 +11,7 @@ if (mysqli_connect_errno()) {
     exit();
 }
 
-
+//Érdekes Cikkek kilistázása random 
 if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "index") {
    
     if ($result = mysqli_query($dbc, "SELECT * FROM cikkek WHERE kategoria ='erdekes' and aktiv = 1")) {
@@ -23,6 +23,7 @@ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "index") {
     $erdekes = mysqli_query($dbc, $sql);
 }
 
+//Vicces Cikkek kilistázása random 
 if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "vicces") {
   
     if ($result = mysqli_query($dbc, "SELECT * FROM cikkek WHERE kategoria ='vicces' and aktiv = 1")) {
@@ -34,4 +35,10 @@ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "vicces") {
     $erdekes = mysqli_query($dbc, $sql);
 }
 
+//HA HOSSZÚ A SZÖVEG, LEGYEN RÖVID ÉS '...'
+function truncate($str, $chars, $end = '...') {
+    if (strlen($str) <= $chars) return $str;
+    $new = substr($str, 0, $chars + 1);
+    return substr($new, 0, strrpos($new, ' ')) . $end;
+}
 ?>

@@ -1,6 +1,4 @@
-<?php
-  require_once("../user/action.php");
-?>
+<?php require_once("action.php");?>
 <!doctype html>
 <html>
 <head>
@@ -8,13 +6,11 @@
 <title>SZFM_Fact_Portal</title>
 <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
 	<h2 class="header">
 		Tény Portál
 	</h2>
-    <div class="container" align="center">
-		<div class="container" align="center">
+    <div align="center">
 			<div class="vertical-center">	
                 <a href="user_article.php">
                     <button type="button" class="button1">
@@ -36,32 +32,33 @@
                         Kilépés
                     </button>
                 </a>  
-		</div>
+	</div>
         <h1 class="cikk-header">
 		    Cikk beküldés
 	    </h1>
 		<form action="" method="post" enctype="multipart/form-data">
-		  <textarea class="cikk-place" 
-		  			type="text" 
-				 	cols="60"
-					rows="10"
+            <textarea class="cikk-place" 
+                    type="text" 
+                    cols="60"
+                    rows="10"
                     placeholder="Az új tény helye:"
-                    name="ctext" style="margin-bottom:  10px;" required></textarea>
-			<br>
-			<label for="kategoria">Válassz Kategóriát: </label>
-			<select name="kategoria" id="kategoria" style="margin-bottom:  10px;">
-				<option value="érdekes">Érdekes</option>
-				<option value="vicces">Vicces</option>
-			</select>
+                    name="ctext" style="margin-bottom:  10px;" required>
+            </textarea>
+            <br>
+            <label for="kategoria">Válassz Kategóriát: </label>
+            <select name="kategoria" id="kategoria" style="margin-bottom:  10px;">
+                <option value="érdekes">Érdekes</option>
+                <option value="vicces">Vicces</option>
+            </select>
             </br>
             <input type="file" name="kep" value=""/>
             <br>
             <input type="hidden" name="event" id="event" value="cikkFel">
-		    <button class="cikk-button" type="submit" >Beküldés</button>
-		</form>
-        <h1 class="version">
-            v.0.1
-        </h1>
+            <button class="cikk-button" type="submit" >Beküldés</button>
+        </form>
     </div>
+    <h1 class="version">
+        v.0.1
+    </h1>
 </body>
 </html>
