@@ -35,6 +35,12 @@ if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "vicces") {
     $erdekes = mysqli_query($dbc, $sql);
 }
 
+//Rangsor kilistázása like-ok alapján
+if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "rank") {
+    $sql ="select * from cikkek inner join likes_number on cikkek.cid=likes_number.cid order by likes desc ";
+    $cikkek = mysqli_query($dbc, $sql);
+}
+
 //HA HOSSZÚ A SZÖVEG, LEGYEN RÖVID ÉS '...'
 function truncate($str, $chars, $end = '...') {
     if (strlen($str) <= $chars) return $str;
