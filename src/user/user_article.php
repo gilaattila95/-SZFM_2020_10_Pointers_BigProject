@@ -10,6 +10,7 @@
 	<h2 class="header">
 		Tény Portál
 	</h2>
+	<?php  if (isset($_SESSION["logged"]) && $_SESSION["logged"] == true){ ?>
     <div align="center">
       	<div class="vertical-center">	
 			<a href="user_article.php">
@@ -27,7 +28,7 @@
 					Rangsor
 				</button>
 			</a>
-			<a href="../index.php?event=kilepes" name="event" id="event" value="user_kilepes">
+			<a href="logout.php" name="event" id="event" value="kilepes">
 				<button type="button" class="button2">
 					Kilépés
 				</button>
@@ -36,17 +37,14 @@
 	</div>
 	<div class="welcome" align="center" style="font-size:50px;margin-top: 20px; font-weight: bold; color:white;" >
 		<?php
-			$username=$_SESSION['username'];
-			print ("Üdvüzlünk: $username!");
+			$uname=$_SESSION['uname'];
+			print ("Üdvüzlünk: $uname!");
 		?>
 	</div>
 	<div class="userCikkLista" align="center" style="margin-top: 10px;">
 		<div class="vertical-center">		
 			<?php 		
-				$username=$_SESSION['username'];
-				$sql ="select * from cikkek where usent=(select cuid from ceg_userek where uname='$username' and aktiv)";
-				$cikkek = mysqli_query($db, $sql);
-				if ($result = $db->query($sql)) {
+				if ($result = $dbc->query($sql)) {
 					while ($row = $result->fetch_assoc()) { ?>
 			<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; width: 800px; background-color:white;">
 				<div  style="padding: 2px 16px; text-align:left">
@@ -61,6 +59,11 @@
 			?>	
 		</div>
 	</div>
+	<?php 
+		} else {
+            header("location:../login.php");
+		}
+	?>
     <h1 class="version">
     v.0.2
     </h1>

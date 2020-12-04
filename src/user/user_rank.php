@@ -10,6 +10,7 @@
 	<h2 class="header">
 		Tény Portál
 	</h2>
+	<?php  if (isset($_SESSION["logged"]) && $_SESSION["logged"] == true){ ?>
     <div align="center">
 		<div class="vertical-center">	
 			<a href="user_article.php">
@@ -27,7 +28,7 @@
 					Rangsor
 				</button>
 			</a>
-			<a href="../index.php?event=kilepes" name="event" id="event" value="user_kilepes">
+			<a href="logout.php" name="event" id="event" value="kilepes">
 				<button type="button" class="button2">
 					Kilépés
 				</button>
@@ -43,7 +44,7 @@
 			</div>
 		</div>
 		<?php
-			if ($result = $db->query($sql)) {
+			if ($result = $dbc->query($sql)) {
 				while ($row = $result->fetch_assoc()) { ?>
 					<div style="display:inline-flex">
 						<div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); width: 200px; background-color:grey;">
@@ -58,6 +59,11 @@
 			}
 		?>
 	</div>
+	<?php 
+		} else {
+            header("location:../login.php");
+		}
+	?>
 	<h1 class="version">
 		v.0.1
 	</h1>
