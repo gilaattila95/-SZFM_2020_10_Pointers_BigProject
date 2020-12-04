@@ -90,8 +90,23 @@ if ($pEvent == "user_login") {
 		}  
 	}
 
+}
 
+//User saját cikkeinek a kilistázása 
+if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "user_article") {
+    if (isset($_SESSION["cuid"])) {
+		$cuid=$_SESSION["cuid"];
+        $sql ="select * from cikkek where usent=$cuid";
+        $cikkek = mysqli_query($dbc, $sql);
 	}
+}
+
+//Rangsor kilistázása like-ok alapján
+if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "user_rank") {
+	$cuid = $_SESSION["cuid"];
+    $sql ="select * from cikkek inner join likes_number on cikkek.cid=likes_number.cid where usent=(SELECT cuid FROM ceg_userek WHERE cuid='$cuid') order by likes desc ";
+    $cikkek = mysqli_query($dbc, $sql);
+}
 
 //HA HOSSZÚ A SZÖVEG, LEGYEN RÖVID ÉS '...'
 function truncate($str, $chars, $end = '...') {
