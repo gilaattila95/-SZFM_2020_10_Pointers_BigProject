@@ -43,7 +43,7 @@ CREATE TABLE `admin_userek` (
 --
 
 INSERT INTO `admin_userek` (`auid`, `email`, `jelszo`, `uname`, `aktiv`) VALUES
-(2, 'admin@email.com', '$2y$10$FNvUJOOdM5/HiBzC9TESJeT.XxSTMKdvGt8vNthPYLB7vuQMa/Jdu', 'admin', 1);
+(1, 'admin@email.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'admin', 1);
 
 -- --------------------------------------------------------
 
