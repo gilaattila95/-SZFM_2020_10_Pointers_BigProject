@@ -51,10 +51,16 @@
 			<img src="images/<?php print $vicces["kep"] ?>" class="fact_pic" width="30%" height="30%"></p>
 			<div class="thumbs">
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+				<?php
+				$lnid=$vicces["lnid"];
+				$x=$vicces["likes"];
+				$x++;
+				$sql="UPDATE `likes_number` SET `likes`=1,`dislikes`=1 where lnid=$lnid"; 
+				?>
 				<i id="fa fa-thumbs-up" class="fa fa-thumbs-up" ></i>
-				<i>&nbsp;&nbsp;</i>
+				Likes:<?php print $vicces["likes"]?><i>&nbsp;&nbsp;</i>
 				<i id="fa fa-thumbs-down" class="fa fa-thumbs-down"></i>
-				<script src="main.js"></script>
+				Dislikes:<?php print $vicces["dislikes"]?><i>&nbsp;&nbsp;</i>
 			</div>
 			<a href="">
 				<button type="button" class="back">	

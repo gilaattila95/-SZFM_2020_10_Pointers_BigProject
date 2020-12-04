@@ -53,8 +53,9 @@
         <div class="thumbs">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <i id="fa fa-thumbs-up" class="fa fa-thumbs-up" ></i>
-        <i>&nbsp;&nbsp;</i>
+        Likes:<?php print $erdekes["likes"]?><i>&nbsp;&nbsp;</i>
         <i id="fa fa-thumbs-down" class="fa fa-thumbs-down"></i>
+        Dislikes:<?php print $erdekes["dislikes"]?><i>&nbsp;&nbsp;</i>
         <script src="main.js"></script>
         </div>
       <a href="">  
