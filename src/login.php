@@ -43,16 +43,14 @@
 				</button>
 			</a>
 		</div>
-		<form method="post" action="login.php"> 
-			<?php include('user/errors.php'); ?> 
-			<div class="login"> 
-			<label>Felhasználónév:</label> <br>
-			<input type="text" name="username" > <br>
-			<label>Jelszó:</label> <br>
-			<input type="password" name="password"> <br><br>
-			<button type="submit" class="admin-button" name="login_user">Belépés</button> 
-			</div>
-		</form> 
+		<form class="login" action="" method="post">
+		<label for="uname"><b>Felhasználónév</b></label><br>
+		<input type="text" placeholder="Enter Username" name="uname" id="uname" required><br><br>
+		<label for="psw"><b>Jelszó</b></label><br>
+		<input type="password" placeholder="Enter Password" name="psw" id="psw" required><br><br>
+		<input type="hidden" name="event" id="event" value="user_login">
+		<button class="admin-button" type="submit">Belépés</button>
+		</form>
 		<p> Még nincs fiókod? 
 			<a href="reg.php"> 
 				Katt ide!
