@@ -115,5 +115,59 @@ function truncate($str, $chars, $end = '...') {
 	return substr($new, 0, strrpos($new, ' ')) . $end;
 }
 
+//Cikk feltöltés
+function phpAlert($msg) {
+    echo  '<div align="center"> <div class="alert" style=" width: 450px; padding: 20px; background-color: #51A9F6; color: white; margin-bottom: 15px;">';
+    echo '<span class="closebtn" onclick="this.parentElement.style.display=\'none\'"';
+    echo ' style="margin-left: 15px; color: white; font-weight: bold; float: right; font-size: 22px; line-height: 20px; cursor: pointer; transition: 0.3s;"';
+    echo '>&times;</span>';
+    echo $msg;
+    echo '</div></div>'; 
+}
+
+if (pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME) == "user_send_article") {
+    if (isset($_SESSION["cuid"])) { 
+        $cuid = $_SESSION["cuid"];
+        if($pEvent == "cikkFel") { 
+            if ($_FILES['kep']['size'] == 0 && $_FILES['kep']['error'] == 0) {
+                $sql = "insert into cikkek (ctext, kep, asent, usent, aktiv, kategoria) values ('$ctext', '', 0, $cuid, 0, '$kategoria')";
+                if(mysqli_query($dbc, $sql)) {
+                    $_SESSION['msg'] ="A cikkfeltöltés sikeres!";
+                    header("location: users_articles.php");
+                    exit;
+                    
+                } else {
+                    $msg ="A cikkfeltöltés sikertelen!";
+                    phpAlert($msg);
+                }
+            } else {
+                $filename = $_FILES["kep"]["name"]; 
+                $tempname = $_FILES["kep"]["tmp_name"];     
+                $folder = "../images/".$filename; 
+            
+                if (($_FILES["kep"]["type"] == "image/jpeg" || $_FILES["kep"]["type"] == "image/pjpeg") || $_FILES["kep"]["type"] == "image/png" || $_FILES["kep"]["type"] == "image/jpg" || $_FILES["kep"]["size"] == 0 && isset($ctext) ) {
+                    $sql = "insert into cikkek (ctext, kep, asent, usent, aktiv, kategoria) values ('$ctext', '$filename', 0, $cuid, 0, '$kategoria')";
+                    if(mysqli_query($dbc, $sql)) {
+                        if (move_uploaded_file($tempname, $folder))  { 
+                            $msg = "A képfeltöltés sikeres!"; 
+                            //phpAlert($msg);
+                        
+                        } else { 
+                            $msg = "A képfeltöltés sikertelen!"; 
+                            //phpAlert($msg);
+                        }
+                        $msg = "A cikkfeltöltés sikeres!"; 
+                        phpAlert($msg);
+                    } else {
+                        $msg = "A cikkfeltöltés sikertelen!"; 
+                        phpAlert($msg);
+                    }
+                } else {
+                    $msg = "A képformátum nem megfelelő!"; 
+                    phpAlert($msg);
+                }
+            }
+        }
+    } 
 }
 ?>
