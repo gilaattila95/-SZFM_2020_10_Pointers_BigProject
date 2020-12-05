@@ -108,3 +108,62 @@ Ha megpróbáljuk, akkor a várt módon visszairányít az admin.php bejelentkez
 
 - Teszt 20: Az admin_send_article.php vizsgálata:
 </br>Elvárás, hogy Firefox böngészőben is hibaüzenet jelenjen meg, ha nem megfelelően történik a cikkfeltöltés. Ez a feltétel teljesül, mert ha kitöltöttük a szövegmezőt és nem megfelelő képformátumú képet választottunk ki, akkor megjelenik Firefox böngészőben is a "A képformátum nem megfelelő!" hibaüzenet.</br>
+
+### Kincs Ákos
+#### Tesztelés Chrome böngészőben
+
+- Teszt 1: Felhasználói regisztrációs oldal (reg.php) vizsgálata:
+</br>Elvárás, hogy az adatbeviteli mezőkbe a gond nélkül lehessen gépelni, a jelszó megadását igénylő mezőkbe írt karaktersor
+pedig ne legyen látható. Ez a feltétel teljesül, az összes mezőbe írhatunk, a jelszavak nem láthatóak. </br>
+
+- Teszt 2: Felhasználói regisztrációs oldalon (reg.php) található hivatkozások vizsgálata:
+</br>Elvárás, hogy az oldal alján megjelenő hivatkozásra kattintva a megfelelő oldalra jussunk. 
+Az elvásárunknak eleget tesz, a vizsgált szövegre történő kattintás után a megfelelő, bejelentkezési oldalra navigálunk.
+</br>
+
+- Teszt 3: Felhasználói bejelentkezési oldal (login.php) vizsgálata:
+</br>Az elvárásunk az, hogy az adatbeviteli mezőkbe a gond nélkül lehessen gépelni, a jelszó megadását igénylő mezőkbe írt karaktersor
+pedig ne legyen látható. Teszt után megállapítható, hogy ez az elvárás teljesül, az összes mezőbe írhatunk, 
+a jelszavak pedig ténylegesen nem láthatóak. </br>
+
+- Teszt 4: Felhasználói bejelentkezési oldalon (login.php) található hivatkozások vizsgálata:
+</br> Elvárás, hogy az oldal alján megjelenő hivatkozásra kattintva a megfelelő oldalra jussunk. 
+Az elvásárunknak eleget tesz, a vizsgált szövegre történő kattintás után a megfelelő, regisztrációs oldalra jutunk.</br>
+
+- Teszt 5: E-mail cím helyességének vizsgálata a regisztrációs oldalon (reg.php):
+</br>
+Elvárás lenne, hogy ha a regisztrációs folyamat során megadott e-mail cím nem megfelelő formátuma esetén, illetve ha az adott
+ e-mail címmel már regisztáltak, az oldal interaktívan jelezzen vissza. Ez oldal az elvárt módon működik, a felhasználót 
+ egyértelműen tájékoztatja mindkét esetleges a problémáról.
+</br>
+
+- Teszt 6: Felhasználónév vizsgálata a regisztrációs oldalon (reg.php):
+</br>
+Elvárás lenne, hogy két ugyanolyan nevű felhasználó ne regisztálhasson az oldalon. Ennek a feltételnek is megfelel az oldal,
+a felhasználó hibát kap ha az általa választott névvel regisztráltak előtte.
+</br>
+
+- Teszt 7: Jelszavakkal kapcsolatos elvárások vizsgálata a regisztrációs oldalon (reg.php):
+</br>
+Elvárás, hogy hibaüzenetet kapjunk a regisztráció során meg nem adott jelszó esetén, illetve akkor is, ha a jelszó ismételt
+megadásakor más jelszót ad meg a felhasználó. Mindkét feltétel teljesül, mindkét esetben megfelelő hibaüzenet jelenik meg
+az oldalon.
+</br>
+
+- Teszt 8: Sikeres regisztráció vizsgálata (reg.php):
+</br>
+Az elvárás, hogy a megfelelő adatokkal történő regisztrációs űrlap után sikeres legyen a regisztráció, majd ezt követően 
+be lehessen jelentkezni. Az oldal az elvárásoknak megfelelően funkcionál, egy bezárható előugró ablakban kapunk erről
+visszajelzést. 
+</br>
+
+- Teszt 9: Felhasználónév vizsgálata a felhasználói bejelentkezésnél (login.php):
+</br>
+Ha felhasználónevünket hiányosan adjuk meg, visszajelzést kapunk az oldaltól, hogy szükséges lenne pótolni azt.
+</br>
+
+- Teszt 10: Jelszó vizsgálata a felhasználói bejelentkezésnél (login.php):
+</br>
+Ha jelszavunkat hiányosan adjuk meg, visszajelzést kapunk az oldaltól, hogy szükséges lenne pótolni azt.
+</br>
+
