@@ -167,3 +167,62 @@ Ha felhasználónevünket hiányosan adjuk meg, visszajelzést kapunk az oldalt�
 Ha jelszavunkat hiányosan adjuk meg, visszajelzést kapunk az oldaltól, hogy szükséges lenne pótolni azt.
 </br>
 
+- Teszt 11: Felhasználói kijelentkezés vizsgálata (user_article.php):
+</br>
+A várt funkcionalitás, hogy a kiléps gombra kattintva a felhasználó visszajusson a bejelentkezési oldalra. 
+A gomb megfelelően működik, kattintása utána a felhasználói bejelentkezési képernyőre jut.
+</br>
+
+- Teszt 12: Felhasználónév vizsgálata az admin bejelentkezési oldalon (admin.php):
+</br>
+A felhasználói bejelentkezéshez hasolóan, itt is elvárás, hogy hiányosan megadott bejelentkezési adatok esetén
+hibaüzenet jelenjen meg. Ez az elvárás megvalósul, a megfelelő hiányos adat megadására hívja fel a figyelmet az oldal. 
+</br>
+
+- Teszt 13: Jelszó vizsgálata az admin bejelentkezési oldalon (admin.php):
+</br>
+A felhasználói bejelentkezéshez hasolóan, itt is elvárás, hogy hiányosan megadott bejelentkezési adatok esetén
+hibaüzenet jelenjen meg. Ez az elvárás megvalósul, a megfelelő hiányos adat megadására hívja fel a figyelmet az oldal. 
+</br>
+
+- Teszt 14: Admin bejelentkezés vizsgálata (admin.php):
+</br>
+Elvárás lenne, hogy az adminisztrátori funkciókhoz csak az adminok férhessenek hozzá. Az elvárás teljesül, az adatbázisban
+adminként nem szereplő felhasználókat nem engedi így bejelentkezni.
+</br>
+
+- Teszt 15: Admin főoldal vizsgálata (administrator.php):
+</br>
+A főoldaltól elvárjuk, hogy a hivatkozások megfelelően kattinthatók illetve az elvárt oldalra irányítanak át.
+A tesztelést követően a hivatkozások megfelelő működéséről is megbizonyosodtunk, teljesül az elvárás.
+</br>
+
+- Teszt 16: Admin kilépés (administrator.php):
+</br>
+A logikus és elvárt funkcionalitása az Admin kilépés gombnak az lenne, hogy az admint visszairányítsa a bejelentkezési felületre.
+A gomb eleget téve ennek, megfelelően működik.
+</br>
+
+#### Tesztelés Firefox böngészőben
+
+- Teszt 17: Általános teszt:
+</br>
+A hivatkozások mindenhol megfelelőek, a bejelentkezés és a regisztráció működik.
+</br>
+
+- Teszt 18: Visszajelzések tesztje:
+</br>
+A nem megfelelő regisztrációs - és bejelentkezési adatokról történő tájékoztatás megfelelően működik.
+</br>
+
+####Tesztelés Edge böngészőben
+
+- Teszt 19: Általános teszt:
+</br>
+A hivatkozások mindenhol megfelelőek, a bejelentkezés és a regisztráció működik.
+</br>
+
+- Teszt 20: Visszajelzések tesztje:
+</br>
+A nem megfelelő regisztrációs - és bejelentkezési adatokról történő tájékoztatás megfelelően működik.
+</br>
