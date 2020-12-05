@@ -118,8 +118,7 @@ pedig ne legyen látható. Ez a feltétel teljesül, az összes mezőbe írhatun
 
 - Teszt 2: Felhasználói regisztrációs oldalon (reg.php) található hivatkozások vizsgálata:
 </br>Elvárás, hogy az oldal alján megjelenő hivatkozásra kattintva a megfelelő oldalra jussunk. 
-Az elvásárunknak eleget tesz, a vizsgált szövegre történő kattintás után a megfelelő, bejelentkezési oldalra navigálunk.
-</br>
+Az elvásárunknak eleget tesz, a vizsgált szövegre történő kattintás után a megfelelő, bejelentkezési oldalra navigálunk.</br>
 
 - Teszt 3: Felhasználói bejelentkezési oldal (login.php) vizsgálata:
 </br>Az elvárásunk az, hogy az adatbeviteli mezőkbe a gond nélkül lehessen gépelni, a jelszó megadását igénylő mezőkbe írt karaktersor
@@ -131,98 +130,66 @@ a jelszavak pedig ténylegesen nem láthatóak. </br>
 Az elvásárunknak eleget tesz, a vizsgált szövegre történő kattintás után a megfelelő, regisztrációs oldalra jutunk.</br>
 
 - Teszt 5: E-mail cím helyességének vizsgálata a regisztrációs oldalon (reg.php):
-</br>
-Elvárás lenne, hogy ha a regisztrációs folyamat során megadott e-mail cím nem megfelelő formátuma esetén, illetve ha az adott
+</br>Elvárás lenne, hogy ha a regisztrációs folyamat során megadott e-mail cím nem megfelelő formátuma esetén, illetve ha az adott
  e-mail címmel már regisztáltak, az oldal interaktívan jelezzen vissza. Ez oldal az elvárt módon működik, a felhasználót 
- egyértelműen tájékoztatja mindkét esetleges a problémáról.
-</br>
+ egyértelműen tájékoztatja mindkét esetleges a problémáról.</br>
 
 - Teszt 6: Felhasználónév vizsgálata a regisztrációs oldalon (reg.php):
-</br>
-Elvárás lenne, hogy két ugyanolyan nevű felhasználó ne regisztálhasson az oldalon. Ennek a feltételnek is megfelel az oldal,
-a felhasználó hibát kap ha az általa választott névvel regisztráltak előtte.
-</br>
+</br>Elvárás lenne, hogy két ugyanolyan nevű felhasználó ne regisztálhasson az oldalon. Ennek a feltételnek is megfelel az oldal,
+a felhasználó hibát kap ha az általa választott névvel regisztráltak előtte.</br>
 
 - Teszt 7: Jelszavakkal kapcsolatos elvárások vizsgálata a regisztrációs oldalon (reg.php):
-</br>
-Elvárás, hogy hibaüzenetet kapjunk a regisztráció során meg nem adott jelszó esetén, illetve akkor is, ha a jelszó ismételt
+</br>Elvárás, hogy hibaüzenetet kapjunk a regisztráció során meg nem adott jelszó esetén, illetve akkor is, ha a jelszó ismételt
 megadásakor más jelszót ad meg a felhasználó. Mindkét feltétel teljesül, mindkét esetben megfelelő hibaüzenet jelenik meg
-az oldalon.
-</br>
+az oldalon.</br>
 
 - Teszt 8: Sikeres regisztráció vizsgálata (reg.php):
-</br>
-Az elvárás, hogy a megfelelő adatokkal történő regisztrációs űrlap után sikeres legyen a regisztráció, majd ezt követően 
+</br>Az elvárás, hogy a megfelelő adatokkal történő regisztrációs űrlap után sikeres legyen a regisztráció, majd ezt követően 
 be lehessen jelentkezni. Az oldal az elvárásoknak megfelelően funkcionál, egy bezárható előugró ablakban kapunk erről
-visszajelzést. 
-</br>
+visszajelzést.</br>
 
 - Teszt 9: Felhasználónév vizsgálata a felhasználói bejelentkezésnél (login.php):
-</br>
-Ha felhasználónevünket hiányosan adjuk meg, visszajelzést kapunk az oldaltól, hogy szükséges lenne pótolni azt.
-</br>
+</br>Ha felhasználónevünket hiányosan adjuk meg, visszajelzést kapunk az oldaltól, hogy szükséges lenne pótolni azt.</br>
 
 - Teszt 10: Jelszó vizsgálata a felhasználói bejelentkezésnél (login.php):
-</br>
-Ha jelszavunkat hiányosan adjuk meg, visszajelzést kapunk az oldaltól, hogy szükséges lenne pótolni azt.
-</br>
+</br>Ha jelszavunkat hiányosan adjuk meg, visszajelzést kapunk az oldaltól, hogy szükséges lenne pótolni azt.</br>
 
 - Teszt 11: Felhasználói kijelentkezés vizsgálata (user_article.php):
-</br>
-A várt funkcionalitás, hogy a kiléps gombra kattintva a felhasználó visszajusson a bejelentkezési oldalra. 
-A gomb megfelelően működik, kattintása utána a felhasználói bejelentkezési képernyőre jut.
-</br>
+</br>A várt funkcionalitás, hogy a kiléps gombra kattintva a felhasználó visszajusson a bejelentkezési oldalra. 
+A gomb megfelelően működik, kattintása utána a felhasználói bejelentkezési képernyőre jut.</br>
 
 - Teszt 12: Felhasználónév vizsgálata az admin bejelentkezési oldalon (admin.php):
-</br>
-A felhasználói bejelentkezéshez hasolóan, itt is elvárás, hogy hiányosan megadott bejelentkezési adatok esetén
-hibaüzenet jelenjen meg. Ez az elvárás megvalósul, a megfelelő hiányos adat megadására hívja fel a figyelmet az oldal. 
-</br>
+</br>A felhasználói bejelentkezéshez hasolóan, itt is elvárás, hogy hiányosan megadott bejelentkezési adatok esetén
+hibaüzenet jelenjen meg. Ez az elvárás megvalósul, a megfelelő hiányos adat megadására hívja fel a figyelmet az oldal. </br>
 
 - Teszt 13: Jelszó vizsgálata az admin bejelentkezési oldalon (admin.php):
-</br>
-A felhasználói bejelentkezéshez hasolóan, itt is elvárás, hogy hiányosan megadott bejelentkezési adatok esetén
-hibaüzenet jelenjen meg. Ez az elvárás megvalósul, a megfelelő hiányos adat megadására hívja fel a figyelmet az oldal. 
-</br>
+</br>A felhasználói bejelentkezéshez hasolóan, itt is elvárás, hogy hiányosan megadott bejelentkezési adatok esetén
+hibaüzenet jelenjen meg. Ez az elvárás megvalósul, a megfelelő hiányos adat megadására hívja fel a figyelmet az oldal. </br>
 
 - Teszt 14: Admin bejelentkezés vizsgálata (admin.php):
-</br>
-Elvárás lenne, hogy az adminisztrátori funkciókhoz csak az adminok férhessenek hozzá. Az elvárás teljesül, az adatbázisban
-adminként nem szereplő felhasználókat nem engedi így bejelentkezni.
-</br>
+</br>Elvárás lenne, hogy az adminisztrátori funkciókhoz csak az adminok férhessenek hozzá. Az elvárás teljesül, az adatbázisban
+adminként nem szereplő felhasználókat nem engedi így bejelentkezni.</br>
 
 - Teszt 15: Admin főoldal vizsgálata (administrator.php):
-</br>
-A főoldaltól elvárjuk, hogy a hivatkozások megfelelően kattinthatók illetve az elvárt oldalra irányítanak át.
-A tesztelést követően a hivatkozások megfelelő működéséről is megbizonyosodtunk, teljesül az elvárás.
-</br>
+</br>A főoldaltól elvárjuk, hogy a hivatkozások megfelelően kattinthatók illetve az elvárt oldalra irányítanak át.
+A tesztelést követően a hivatkozások megfelelő működéséről is megbizonyosodtunk, teljesül az elvárás.</br>
 
 - Teszt 16: Admin kilépés (administrator.php):
-</br>
-A logikus és elvárt funkcionalitása az Admin kilépés gombnak az lenne, hogy az admint visszairányítsa a bejelentkezési felületre.
-A gomb eleget téve ennek, megfelelően működik.
-</br>
+</br>A logikus és elvárt funkcionalitása az Admin kilépés gombnak az lenne, hogy az admint visszairányítsa a bejelentkezési felületre.
+A gomb eleget téve ennek, megfelelően működik.</br>
 
 #### Tesztelés Firefox böngészőben
 
 - Teszt 17: Általános teszt:
-</br>
-A hivatkozások mindenhol megfelelőek, a bejelentkezés és a regisztráció működik.
-</br>
+</br>A hivatkozások mindenhol megfelelőek, a bejelentkezés és a regisztráció működik.</br>
 
 - Teszt 18: Visszajelzések tesztje:
-</br>
-A nem megfelelő regisztrációs - és bejelentkezési adatokról történő tájékoztatás megfelelően működik.
-</br>
+</br>A nem megfelelő regisztrációs - és bejelentkezési adatokról történő tájékoztatás megfelelően működik.</br>
 
-####Tesztelés Edge böngészőben
+#### Tesztelés Edge böngészőben
 
 - Teszt 19: Általános teszt:
-</br>
-A hivatkozások mindenhol megfelelőek, a bejelentkezés és a regisztráció működik.
-</br>
+</br>A hivatkozások mindenhol megfelelőek, a bejelentkezés és a regisztráció működik.</br>
 
 - Teszt 20: Visszajelzések tesztje:
-</br>
-A nem megfelelő regisztrációs - és bejelentkezési adatokról történő tájékoztatás megfelelően működik.
-</br>
+</br>A nem megfelelő regisztrációs - és bejelentkezési adatokról történő tájékoztatás megfelelően működik.</br>
