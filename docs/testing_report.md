@@ -27,7 +27,7 @@ Ha a legördülő listából kiválasztjuk az 'érdekes' vagy a 'vicces' kategó
 </br>A felhasználók által beküldött cikkek listázása megfelelően működnek. Lehet szűrni összes, aktív vagy aktiválandó kategóriák szerint.</br>
 
 - Teszt 3: az users_article.php oldalon a hivatkozások vizsgálata:
-</br>Elvárás, hogy a cikkre lá lehessen kattintani, és átirányítson egy másik oldalra. 
+</br>Elvárás, hogy a cikkre rá lehessen kattintani, és átirányítson egy másik oldalra. 
 Ez az elvárás teljesül és átirányít az edit_article.php oldalra, ahol a cikk szerkesztő mezőben megjelenik a szerkesztendő cikk szövege.</br>
 
 - Teszt 4: Az edit_article.php oldalon a cikk frissítésének vizsgálata (csak szöveg és kategória):
