@@ -193,3 +193,73 @@ A gomb eleget téve ennek, megfelelően működik.</br>
 
 - Teszt 20: Visszajelzések tesztje:
 </br>A nem megfelelő regisztrációs - és bejelentkezési adatokról történő tájékoztatás megfelelően működik.</br>
+
+### Gila Attila 
+#### Tesztelés Firefox böngészőben
+
+- Teszt 1: Random cikk betöltés (index.php) vizsgálata:
+</br>Az oldal betöltésekor egy random cikket kell kapnunk képpel együtt, melyet minden oldaltöltésnél frissít. Az igényelt folyamat sikeres.</br>
+
+- Teszt 2: Random cikk betöltés (vicces.php) vizsgálata:
+</br>Az oldal betöltésekor egy random cikket kell kapnunk képpel együtt, melyet minden oldaltöltésnél frissít. Az igényelt folyamat sikeres.</br>
+
+- Teszt 3: Az index oldalon (index.php) található hivatkozások vizsgálata:
+</br> Elvárás, hogy az oldal menüjén megjelenő hivatkozásra kattintva a megfelelő oldalra jussunk. 
+Az elvásárunknak eleget tesz, a vizsgált szövegre történő kattintás után a megfelelő oldalra jutunk.
+
+- Teszt 4: A vicces oldalon (vicces.php) található hivatkozások vizsgálata:
+</br> Elvárás, hogy az oldal menüjén megjelenő hivatkozásra kattintva a megfelelő oldalra jussunk. 
+Az elvásárunknak eleget tesz, a vizsgált szövegre történő kattintás után a megfelelő oldalra jutunk.</br>
+
+- Teszt 5: A rangsor oldalon (rank.php) található hivatkozások vizsgálata:
+</br> Elvárás, hogy az oldal menüjén megjelenő hivatkozásra kattintva a megfelelő oldalra jussunk. 
+Az elvásárunknak eleget tesz, a vizsgált szövegre történő kattintás után a megfelelő oldalra jutunk.
+
+- Teszt 6: Like funkció tesztelése (index.php):
+</br>A Like funkció sikeresen betölti az eddigi like-ok számát, és gombnyomásra hozzá ad egyet.</br>
+
+- Teszt 7: Dislike funkció tesztelése (index.php):
+</br>A Disike funkció sikeresen betölti az eddigi dislike-ok számát, és gombnyomásra hozzá ad egyet.</br>
+
+- Teszt 8: Következő gomb funkció tesztelése (index.php):
+</br>A következő gombra kattintva sikeresen betöltődik egy új random cikk.</br>
+
+- Teszt 9: Előző gomb tesztelése (index.php):
+</br>A következő gombra kattintva sikeresen betöltődik az előző random cikk.</br>
+
+- Teszt 10: Like funkció tesztelése (index.php):
+</br>A Like funkció sikeresen betölti az eddigi like-ok számát, és gombnyomásra hozzá ad egyet.</br>
+
+- Teszt 11: Dislike funkció tesztelése (index.php):
+</br>A Disike funkció sikeresen betölti az eddigi dislike-ok számát, és gombnyomásra hozzá ad egyet.</br>
+
+- Teszt 12: Következő gomb funkció tesztelése (index.php):
+</br>A következő gombra kattintva sikeresen betöltődik egy új random cikk.</br>
+
+- Teszt 13: Előző gomb tesztelése (index.php):
+</br>A következő gombra kattintva sikeresen betöltődik az előző random cikk.</br>
+
+- Teszt 14: Ranglista tesztelése (rank.php):
+</br>A rangsor megfelelően jelen meg.</br>
+
+#### Tesztelés Chrome böngészőben
+
+- Teszt 15: Általános teszt:
+</br>A hivatkozások mindenhol megfelelőek.</br>
+
+- Teszt 16: Like és Dislike funkció tesztje:
+</br>Like és dislike funkció megfelelően működik.</br>
+
+- Teszt 17: Ranglista tesztelése (rank.php):
+</br>A rangsor megfelelően jelen meg.</br>
+
+#### Tesztelés Edge böngészőben
+
+- Teszt 18: Általános teszt:
+</br>A hivatkozások mindenhol megfelelőek.</br>
+
+- Teszt 19: Like és Dislike funkció tesztje:
+</br>Like és dislike funkció megfelelően működik.</br>
+
+- Teszt 20: Ranglista tesztelése (rank.php):
+</br>A rangsor megfelelően jelen meg.</br>
